@@ -5,6 +5,7 @@
   "author": "Evan Dorsky",
   "license": "ISC",
   "dependencies": {
-    "pug": "^2.0.0-beta6"
+    "pug": "^2.0.0-beta6",
+    "zepto": "^1.2.0"
   }
 }

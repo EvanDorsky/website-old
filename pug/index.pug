@@ -8,19 +8,21 @@ html(lang="en")
         title= "Evan Dorsky"
 
         link(href="stylesheets/style.css", rel="stylesheet")
+        script(src="node_modules/zepto/dist/zepto.js")
+        script(src="js/main.js")
 
     body
         h1 Evan Dorsky
         ul
             li Olin College Electrical and Computer Engineering '16
-            li Hardware System Integration Engineer at Apple (July '16)
+            li Hardware System Integration Engineer at Apple
             li San Francisco
 
-        h4 Cool stuff
+        h3 Cool stuff
         ul
-            li Origami
-            li Outdoor stuff
-            li Music
-            li Fire arts
-            li Dope projects
-            li Work stuff maybe
+            each cat in categories
+                li
+                    .cat
+                        p #{cat.name}
+                        .more
+                            p more info

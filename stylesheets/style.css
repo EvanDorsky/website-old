@@ -1,30 +1,30 @@
 @font-face {
-  font-family: "San Francisco";
+  font-family: San Francisco;
   font-weight: 100;
   src: url("../font/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
 }
 @font-face {
-  font-family: "San Francisco";
+  font-family: San Francisco;
   font-weight: 200;
   src: url("../font/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
 }
 @font-face {
-  font-family: "San Francisco";
+  font-family: San Francisco;
   font-weight: 400;
   src: url("../font/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 @font-face {
-  font-family: "San Francisco";
+  font-family: San Francisco;
   font-weight: 500;
   src: url("../font/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
 }
 @font-face {
-  font-family: "San Francisco";
+  font-family: San Francisco;
   font-weight: 600;
   src: url("../font/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
 }
 @font-face {
-  font-family: "San Francisco";
+  font-family: San Francisco;
   font-weight: 700;
   src: url("../font/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
 }
@@ -33,4 +33,15 @@ body {
 }
 li {
   list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+.cat .more {
+  display: none;
 }
