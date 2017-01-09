@@ -30,6 +30,7 @@
 }
 body {
   font-family: San Francisco;
+  font-size: 1em;
 }
 li {
   list-style-type: none;
@@ -42,6 +43,6 @@ h5,
 h6 {
   font-weight: 300;
 }
-.cat .more {
-  display: none;
+.photo-box {
+  min-height: 10rem;
 }
