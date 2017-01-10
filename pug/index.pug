@@ -16,14 +16,17 @@ html(lang='en')
         script(src='js/main.js')
 
     body
-        h1 Evan Dorsky
-        ul
-            li Olin College Electrical and Computer Engineering '16
-            li Hardware System Integration Engineer at Apple
-            li San Francisco
+        .container
+            .top
+                h1 Evan Dorsky
+                img.me(src='img/evan.jpg')
+                ul
+                    li Olin College Electrical and Computer Engineering '16
+                    li Hardware System Integration Engineer at Apple
+                    li San Francisco
 
-        h3 Cool stuff
-        ul
-            each cat in categories
-                li.cat #{cat.name}
-            .photo-box
+            .bottom
+                .categories
+                    each cat, key in categories
+                        .cat(cat=key) #{key}
+                .photo-box

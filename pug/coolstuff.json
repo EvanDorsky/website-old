@@ -1,22 +1,22 @@
 {
-    "categories": [
-        {
-            "name": "Adventure"
+    "categories": {
+        "Adventure": {
+            "images": []
         },
-        {
-            "name": "Fire"
+        "Fire": {
+            "images": []
         },
-        {
-            "name": "Music"
+        "Music": {
+            "images": ["chamber.jpg"]
         },
-        {
-            "name": "Origami"
+        "Origami": {
+            "images": ["koi.jpg", "squirrel.jpg"]
         },
-        {
-            "name": "Projects"
+        "Projects": {
+            "images": ["ivani.jpg", "spaceteam.jpg"]
         },
-        {
-            "name": "Work"
+        "Work": {
+            "images": []
         }
-    ]
+    }
 }
