@@ -14,9 +14,6 @@
         },
         "Projects": {
             "images": ["ivani.jpg", "spaceteam.jpg"]
-        },
-        "Work": {
-            "images": []
         }
     }
 }

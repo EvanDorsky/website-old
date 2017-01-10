@@ -28,6 +28,10 @@
   font-weight: 700;
   src: url("../font/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
 }
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: San Francisco;
   font-size: 1em;
@@ -51,12 +55,38 @@ h6 {
   align-items: center;
 }
 .top {
+  display: flex;
   flex: 1 100%;
+}
+.top .me {
+  position: relative;
+  margin: 2rem 2rem 2rem 1rem;
+}
+.top .me img {
+  border-radius: 50%;
+  height: 15rem;
+}
+.top .candid {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 89%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.top:hover .candid {
+  display: block;
+}
+.top .info {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 .bottom {
   display: flex;
   flex-flow: row wrap;
-  flex: 1 100%;
+  flex: 0 60%;
 }
 .bottom .categories {
   display: flex;
@@ -72,8 +102,4 @@ h6 {
 .bottom .photo-box img {
   flex: 1 0 auto;
   width: 1rem;
-}
-img.me {
-  border-radius: 50%;
-  height: 10rem;
 }

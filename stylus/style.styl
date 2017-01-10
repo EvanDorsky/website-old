@@ -1,5 +1,9 @@
 @import "sanfrancisco"
 
+*
+    padding 0
+    margin 0
+
 body
     font-family San Francisco
     font-size 1em
@@ -20,13 +24,38 @@ h1, h2, h3, h4, h5, h6
     align-items center
 
 .top
+    display flex
     flex 1 100%
+
+    .me
+        position relative
+        margin 2rem 2rem 2rem 1rem
+        img
+            border-radius 50%
+            height 15rem
+
+    .candid
+        color white
+        text-align center
+        position absolute
+        left 50%
+        top 89%
+        transform translate(-50%, -50%)
+        display none
+        
+    &:hover .candid
+        display block
+        
+    .info
+        display flex
+        flex-flow column wrap
+        justify-content center
 
 .bottom
     display flex
     flex-flow row wrap
     
-    flex 1 100%
+    flex 0 60%
     
     .categories
         display flex
@@ -44,7 +73,3 @@ h1, h2, h3, h4, h5, h6
         img
             flex 1 0 auto
             width 1rem
-
-img.me
-    border-radius 50%
-    height 10rem
