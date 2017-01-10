@@ -1,18 +1,18 @@
 {
     "categories": {
-        "Adventure": {
+        "outdoors": {
             "images": []
         },
-        "Fire": {
+        "fire": {
             "images": []
         },
-        "Music": {
+        "music": {
             "images": ["chamber.jpg"]
         },
-        "Origami": {
+        "origami": {
             "images": ["koi.jpg", "squirrel.jpg"]
         },
-        "Projects": {
+        "projects": {
             "images": ["ivani.jpg", "spaceteam.jpg"]
         }
     }
