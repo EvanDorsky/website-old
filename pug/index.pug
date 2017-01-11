@@ -17,20 +17,18 @@ html(lang='en')
 
     body
         .container
-            .top
-                .me
-                    img(src='img/evan.jpg')
-                    .candid
-                        | hey
-                .info
-                    h1 Evan Dorsky
-                    ul
-                        li Olin College Electrical and Computer Engineering '16
-                        li Hardware System Integration Engineer at Apple
-                        li Living in San Francisco
+            .me
+                h1 Evan Dorsky
 
-            .bottom
-                .categories
-                    each cat, key in categories
-                        .cat(cat=key) #{key}
-                .photo-box
+                ul
+                    li Olin College Electrical and Computer Engineering '16
+                    li Hardware System Integration Engineer at Apple
+                    li Living in San Francisco
+
+            .portfolio
+                each cat, key in categories
+                    .cat(cat=key)
+                        .cat-title #{key}
+                        .photo-box
+                            each image in cat.images
+                                img(src='img/'+key+'/'+image)
