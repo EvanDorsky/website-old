@@ -28,7 +28,7 @@ html(lang='en')
             .portfolio
                 each cat, key in categories
                     .cat(cat=key)
-                        .cat-title #{key}
+                        .cat-title #{cat.title}
                         .photo-box
                             each image in cat.images
                                 img(src='img/'+key+'/'+image)
