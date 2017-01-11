@@ -1,12 +1,17 @@
 @import "sanfrancisco"
 
+bg-color = #232425
+text-color = #fefefe
+
 *
     padding 0
     margin 0
 
 body
+    background-color bg-color
     font-family San Francisco
     font-size 1em
+    color text-color
     margin 0 auto
     
 li
@@ -38,10 +43,24 @@ h1, h2, h3, h4, h5, h6
     flex-flow column nowrap
 
     .cat-title
+        padding 1rem
+
         font-size 2rem
         font-weight 200
 
     .photo-box
+        display flex
+        flex-flow row wrap
+
+        margin 0 2rem
+        padding 2rem .5rem
+        overflow scroll
+
+        max-width 100%
+        
+        background-color darken(bg-color, 10%)
         img
+            flex 0
+
+            padding 0 1.5rem
             height 10rem
-            margin 0 2rem
