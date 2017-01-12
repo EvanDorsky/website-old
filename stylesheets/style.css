@@ -86,7 +86,15 @@ h6 {
 }
 .cat-img {
   flex: 0;
+  position: relative;
+  margin: 0 1.5rem;
 }
 .cat-img img {
   height: 10rem;
+}
+.cat-img img.color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
 }
