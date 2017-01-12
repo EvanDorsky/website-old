@@ -1,0 +1,92 @@
+@font-face {
+  font-family: San Francisco;
+  font-weight: 100;
+  src: url("../font/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+@font-face {
+  font-family: San Francisco;
+  font-weight: 200;
+  src: url("../font/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+@font-face {
+  font-family: San Francisco;
+  font-weight: 400;
+  src: url("../font/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+@font-face {
+  font-family: San Francisco;
+  font-weight: 500;
+  src: url("../font/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+@font-face {
+  font-family: San Francisco;
+  font-weight: 600;
+  src: url("../font/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+@font-face {
+  font-family: San Francisco;
+  font-weight: 700;
+  src: url("../font/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #232425;
+  font-family: San Francisco;
+  font-size: 1em;
+  color: #fefefe;
+  margin: 0 auto;
+}
+li {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.me {
+  display: flex;
+  flex: 1 100%;
+}
+.me h1 {
+  flex: 1 0 auto;
+}
+.me ul {
+  flex: 1 0 auto;
+}
+.portfolio {
+  flex: 1 100%;
+  flex-flow: column nowrap;
+}
+.portfolio .cat-title {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 200;
+}
+.portfolio .photo-box {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 2rem;
+  padding: 2rem 0.5rem;
+  overflow: scroll;
+  max-width: 100%;
+  background-color: #202021;
+}
+.cat-img {
+  flex: 0;
+}
+.cat-img img {
+  height: 10rem;
+}

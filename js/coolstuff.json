@@ -2,7 +2,7 @@
     "categories": {
         "outdoor": {
             "title": "OUTDOORS",
-            "images": ["lospadres.jpg", "yoclimb.jpg", "yowona.jpg"]
+            "images": ["lospadres", "yoclimb", "yowona"]
         },
         "fire": {
             "title": "FIRE",
@@ -10,11 +10,11 @@
         },
         "origami": {
             "title": "ORIGAMI",
-            "images": ["koi.jpg", "squirrel.jpg"]
+            "images": ["koi", "squirrel"]
         },
         "projects": {
             "title": "PROJECTS",
-            "images": ["ivani.jpg", "spaceteam.jpg"]
+            "images": ["ivani", "spaceteam"]
         },
         "music": {
             "title": "MUSIC",
