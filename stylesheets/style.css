@@ -88,12 +88,13 @@ h6 {
   flex: 0;
   position: relative;
   margin: 0 1.5rem;
+  height: 10rem;
 }
 .cat-img:hover img.color {
   display: block;
 }
 .cat-img img {
-  height: 10rem;
+  height: 100%;
 }
 .cat-img img.color {
   position: absolute;
