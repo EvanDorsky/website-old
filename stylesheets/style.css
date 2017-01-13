@@ -89,6 +89,9 @@ h6 {
   position: relative;
   margin: 0 1.5rem;
 }
+.cat-img:hover img.color {
+  display: block;
+}
 .cat-img img {
   height: 10rem;
 }
