@@ -1,7 +1,7 @@
 @import "sanfrancisco"
 
-bg-color = #232425
-text-color = #fefefe
+bg-color = white
+text-color = black
 
 *
     padding 0
@@ -27,46 +27,57 @@ h1, h2, h3, h4, h5, h6
     justify-content center
     
     align-items center
+    padding 1.5rem
+
+    max-width 800px
+    margin 0 auto
 
 .me
     display flex
     flex 1 100%
+    flex-flow row wrap
+    
+    justify-content space-around
     
     h1
-        flex 1 0 auto
+        margin 1rem
     
     ul
-        flex 1 0 auto
+        margin 1rem
 
 .portfolio
     flex 1 100%
     flex-flow column nowrap
 
-    .cat-title
-        padding 1rem
+.cat-title
+    padding-top 1rem
+    
+    font-size 2rem
+    font-weight 200
 
-        font-size 2rem
-        font-weight 200
+.photo-box
+    display flex
+    flex-flow row wrap
 
-    .photo-box
-        display flex
-        flex-flow row wrap
+    padding 1.5rem .3rem
+    overflow scroll
 
-        margin 0 2rem
-        padding 2rem .5rem
-        overflow scroll
-
-        max-width 100%
-        
-        background-color darken(bg-color, 10%)
+    max-width 100%
+    
+    background-color #f3f3f3
+    border-top 1px solid #ddd
+    border-left 1px solid #ddd
 
 .cat-img
     flex 0
     position relative
 
-    margin 0 1.5rem
+    margin 0 1.2rem
 
     height 10rem
+    
+    border-top 1px solid #ccc
+    border-left 1px solid #ccc
     &:hover
         img.color
             display block
