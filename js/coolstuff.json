@@ -1,16 +1,20 @@
 {
     "categories": {
-        "outdoor": {
-            "title": "Outdoors",
-            "images": ["lospadres", "yoclimb", "yowona"]
+        "projects": {
+            "title": "Projects",
+            "images": ["ivani", "spaceteam"]
         },
         "origami": {
             "title": "Origami",
             "images": ["koi", "squirrel"]
         },
-        "projects": {
-            "title": "Projects",
-            "images": ["ivani", "spaceteam"]
+        "outdoor": {
+            "title": "Outdoors",
+            "images": ["lospadres", "yoclimb", "yowona"]
+        },
+        "courses": {
+            "title": "Courses",
+            "images": ["Olin.js", "Practical EE"]
         },
         "music": {
             "title": "Music",

@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6
     align-items center
     padding 1.5rem
 
-    max-width 800px
+    max-width 900px
     margin 0 auto
 
 .me
@@ -42,8 +42,11 @@ h1, h2, h3, h4, h5, h6
     h1
         margin 1rem
     
-    ul
+    .info
         margin 1rem
+
+    ul.past
+        opacity .5
 
 .portfolio
     flex 1 100%
@@ -56,22 +59,33 @@ h1, h2, h3, h4, h5, h6
     font-size 1.6rem
     font-weight 200
 
-    margin-bottom .75rem
-
-.black-line
-    margin-left 1.5rem
-    background-color black
-    height 3px
-    width 15rem
+.cat
+    padding .5rem 1.5rem
 
 .photo-box
-    padding 1.2rem 0 1.5rem 3rem
+    padding .3rem 0
     display flex
     flex-flow row wrap
 
     overflow scroll
 
     max-width 100%
+    
+.cat.courses
+    .cat-img
+        flex 0 1 auto
+        text-align center
+        
+        border-radius 3px
+        font-weight 200
+        font-size 1.4rem
+
+        padding .75rem
+
+        color white
+        background-color #000
+        
+        height auto
 
 .cat-img
     flex 0
@@ -81,14 +95,13 @@ h1, h2, h3, h4, h5, h6
 
     height 10rem
     
-    border-top 1px solid #ccc
-    border-left 1px solid #ccc
     &:hover
         img.color
             display block
      
     img
         height 100%
+        border-radius 3px
 
         &.color
             position absolute

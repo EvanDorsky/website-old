@@ -56,7 +56,7 @@ h6 {
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .me {
@@ -68,8 +68,11 @@ h6 {
 .me h1 {
   margin: 1rem;
 }
-.me ul {
+.me .info {
   margin: 1rem;
+}
+.me ul.past {
+  opacity: 0.5;
 }
 .portfolio {
   flex: 1 100%;
@@ -81,34 +84,40 @@ h6 {
 .cat-title {
   font-size: 1.6rem;
   font-weight: 200;
-  margin-bottom: 0.75rem;
 }
-.black-line {
-  margin-left: 1.5rem;
-  background-color: #000;
-  height: 3px;
-  width: 15rem;
+.cat {
+  padding: 0.5rem 1.5rem;
 }
 .photo-box {
-  padding: 1.2rem 0 1.5rem 3rem;
+  padding: 0.3rem 0;
   display: flex;
   flex-flow: row wrap;
   overflow: scroll;
   max-width: 100%;
+}
+.cat.courses .cat-img {
+  flex: 0 1 auto;
+  text-align: center;
+  border-radius: 3px;
+  font-weight: 200;
+  font-size: 1.4rem;
+  padding: 0.75rem;
+  color: #fff;
+  background-color: #000;
+  height: auto;
 }
 .cat-img {
   flex: 0;
   position: relative;
   margin-right: 2rem;
   height: 10rem;
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
 }
 .cat-img:hover img.color {
   display: block;
 }
 .cat-img img {
   height: 100%;
+  border-radius: 3px;
 }
 .cat-img img.color {
   position: absolute;
