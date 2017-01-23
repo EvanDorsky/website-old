@@ -2,27 +2,40 @@
     "categories": {
         "projects": {
             "title": "Projects",
-            "images": ["ivani", "spaceteam"]
+            "entries": [
+                {"name": "ivani"},
+                {"name": "spaceteam"}
+            ]
         },
         "origami": {
             "title": "Origami",
-            "images": ["koi", "squirrel"]
+            "entries": [
+                {"name": "koi"},
+                {"name": "squirrel"}
+            ]
         },
         "outdoor": {
             "title": "Outdoors",
-            "images": ["lospadres", "yoclimb", "yowona"]
+            "entries": [
+                {"name": "lospadres"},
+                {"name": "yoclimb"},
+                {"name": "yowona"}
+            ]
         },
         "courses": {
             "title": "Courses",
-            "images": ["Olin.js", "Practical EE"]
+            "entries": [
+                {"name": "Olin.js"},
+                {"name": "Practical EE"}
+            ]
         },
         "music": {
             "title": "Music",
-            "images": []
+            "entries": []
         },
         "fire": {
             "title": "Fire",
-            "images": []
+            "entries": []
         }
     }
 }

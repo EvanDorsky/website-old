@@ -33,11 +33,11 @@ html(lang='en')
                 each cat, key in categories
                     .cat(class=key)
                         .photo-box
-                            each image in cat.images
+                            each entry in cat.entries
                                 .cat-img
                                     if key == "courses"
-                                        p #{image}
+                                        p #{entry.name}
                                     else
-                                        img.color(src='img/'+key+'/'+image+'_tn.jpg')
-                                        img.gray(src='img/'+key+'/'+image+'_tn_gray.jpg')
+                                        img.color(src='img/'+key+'/'+entry.name+'_tn.jpg')
+                                        img.gray(src='img/'+key+'/'+entry.name+'_tn_gray.jpg')
                         .cat-title #{cat.title}
