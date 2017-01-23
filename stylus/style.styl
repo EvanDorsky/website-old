@@ -49,8 +49,7 @@ h1, h2, h3, h4, h5, h6
         opacity .5
 
 .portfolio
-    flex 1 100%
-    flex-flow column nowrap
+    max-width 100%
 
 .cat
     margin 0 1.5rem
@@ -65,14 +64,12 @@ h1, h2, h3, h4, h5, h6
 .photo-box
     margin .3rem 0
     display flex
-    // flex-flow row wrap
-
+    
+    overflow-y hidden
+    overflow-x scroll
+    
     border-radius 3px
 
-    overflow scroll
-
-    max-width 100%
-    
 .cat.courses
     .cat-img
         flex 0 1 auto

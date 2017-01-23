@@ -75,8 +75,7 @@ h6 {
   opacity: 0.5;
 }
 .portfolio {
-  flex: 1 100%;
-  flex-flow: column nowrap;
+  max-width: 100%;
 }
 .cat {
   margin: 0 1.5rem;
@@ -91,9 +90,9 @@ h6 {
 .photo-box {
   margin: 0.3rem 0;
   display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
   border-radius: 3px;
-  overflow: scroll;
-  max-width: 100%;
 }
 .cat.courses .cat-img {
   flex: 0 1 auto;
