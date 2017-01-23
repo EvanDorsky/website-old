@@ -49,30 +49,35 @@ h1, h2, h3, h4, h5, h6
     flex 1 100%
     flex-flow column nowrap
 
+.cat
+    margin 0 1.5rem
+
 .cat-title
-    padding-top 1rem
-    
-    font-size 2rem
+    font-size 1.6rem
     font-weight 200
 
+    margin-bottom .75rem
+
+.black-line
+    margin-left 2rem
+    background-color black
+    height 3px
+    width 15rem
+
 .photo-box
+    padding 1.2rem 0 1.5rem 3rem
     display flex
     flex-flow row wrap
 
-    padding 1.5rem .3rem
     overflow scroll
 
     max-width 100%
-    
-    background-color #f3f3f3
-    border-top 1px solid #ddd
-    border-left 1px solid #ddd
 
 .cat-img
     flex 0
     position relative
 
-    margin 0 1.2rem
+    margin-right 2rem
 
     height 10rem
     
@@ -81,7 +86,7 @@ h1, h2, h3, h4, h5, h6
     &:hover
         img.color
             display block
-            
+     
     img
         height 100%
 

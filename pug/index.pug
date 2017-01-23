@@ -23,6 +23,7 @@ html(lang='en')
                 each cat, key in categories
                     .cat(cat=key)
                         .cat-title #{cat.title}
+                        .black-line
                         .photo-box
                             each image in cat.images
                                 .cat-img
