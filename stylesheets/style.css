@@ -114,8 +114,10 @@ h6 {
 .cat-img {
   flex: 0;
   position: relative;
-  margin-right: 2rem;
   height: 10rem;
+}
+.cat-img:not(:last-child) {
+  padding-right: 2rem;
 }
 .cat-img:hover img.color {
   display: block;
