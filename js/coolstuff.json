@@ -5,11 +5,11 @@
             "entries": [
                 {
                     "name": "ivani",
-                    "desc":""
+                    "desc":"Ivani"
                 },
                 {
                     "name": "spaceteam",
-                    "desc":""
+                    "desc":"Spaceteam"
                 }
             ]
         },
@@ -18,11 +18,11 @@
             "entries": [
                 {
                     "name": "koi",
-                    "desc":""
+                    "desc":"Koi"
                 },
                 {
                     "name": "squirrel",
-                    "desc":""
+                    "desc":"Squirrel"
                 }
             ]
         },
@@ -31,15 +31,15 @@
             "entries": [
                 {
                     "name": "lospadres",
-                    "desc":""
+                    "desc":"Los Padres"
                 },
                 {
                     "name": "yoclimb",
-                    "desc":""
+                    "desc":"Tuolumne Meadows"
                 },
                 {
                     "name": "yowona",
-                    "desc":""
+                    "desc":"Wawona"
                 }
             ]
         },
@@ -47,12 +47,14 @@
             "title": "Courses",
             "entries": [
                 {
-                    "name": "Olin.js",
-                    "desc":""
+                    "name": "olinjs",
+                    "title": "Olin.js",
+                    "desc":"A course on web development"
                 },
                 {
-                    "name": "Practical EE",
-                    "desc":""
+                    "name": "practicalee",
+                    "title": "Practical EE",
+                    "desc":"A course on introductory electrical engineering concepts"
                 }
             ]
         },

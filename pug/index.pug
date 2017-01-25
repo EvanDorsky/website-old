@@ -14,6 +14,9 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1')
         title Evan Dorsky
 
+        //- script(type='text/javascript').
+        //-     var categories = !{JSON.stringify(categories)}
+
         script(src='js/zepto.min.js')
         script(src='js/main.js')
 
@@ -41,10 +44,11 @@ html(lang='en')
                             each entry in cat.entries
                                 .cat-img(name=entry.name)
                                     if key == "courses"
-                                        p #{entry.name}
+                                        p #{entry.title}
                                     else
                                         img.color(src='img/'+key+'/'+entry.name+'_tn.jpg')
                                         img.gray(src='img/'+key+'/'+entry.name+'_tn_gray.jpg')
-                                .cat-details(name=entry.name)
-                                    | Details
+                        each entry in cat.entries
+                            .cat-details(name=entry.name)
+                                p #{entry.desc}
                         .cat-title #{cat.title}
