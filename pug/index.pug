@@ -46,8 +46,9 @@ html(lang='en')
                                     if key == "courses"
                                         p #{entry.title}
                                     else
-                                        img.color(src='img/'+key+'/'+entry.name+'_tn.jpg')
-                                        img.gray(src='img/'+key+'/'+entry.name+'_tn_gray.jpg')
+                                        .img-container
+                                            img.color(src='img/'+key+'/'+entry.name+'_tn.jpg')
+                                            img.gray(src='img/'+key+'/'+entry.name+'_tn_gray.jpg')
                         each entry in cat.entries
                             .cat-details(name=entry.name)
                                 p #{entry.desc}

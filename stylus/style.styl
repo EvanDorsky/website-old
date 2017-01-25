@@ -95,18 +95,15 @@ h1, h2, h3, h4, h5, h6
 
 .cat-img
     flex 0
-    position relative
-
+     
     &:not(:last-child)
         padding-right 2rem
 
+.img-container
     height 10rem
     
-    &:hover
-        img.color
-            display block
-            opacity 0.7
-     
+    position relative
+
     img
         height 100%
         border-radius 3px
@@ -120,6 +117,11 @@ h1, h2, h3, h4, h5, h6
             &.active
                 opacity 1
                 display block
+                
+    &:hover
+        img.color
+            display block
+            opacity 0.7
                 
 .cat-details
     display none
