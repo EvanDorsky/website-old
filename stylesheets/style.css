@@ -90,6 +90,9 @@ h6 {
   font-size: 1.6rem;
   font-weight: 200;
 }
+.cat-title.active {
+  opacity: 0.4;
+}
 .cat {
   padding: 0.5rem 1.5rem;
 }

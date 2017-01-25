@@ -17,6 +17,8 @@ function handleImgClick() {
     var colorImg = $('.cat-img[name='+name+']').find('img.color')
     var colorImgsAll = $('.cat-img').find('img.color')
 
+    var catTitlesAll = $('.cat-title')
+
     var catImgsHere = photoBox.find('.cat-img')
     var whiteOutsHere = photoBox.find('.whiteout')
 
@@ -33,12 +35,14 @@ function handleImgClick() {
     // reset everything
     whiteOutsAll.removeClass('opaque')
     colorImgsAll.removeClass('active')
+    catTitlesAll.removeClass('active')
     catDetails.hide()
 
     // only show if it wasn't showing
     if (wasHidden) {
         whiteOutsAll.addClass('opaque')
-        whiteOutsHere.removeClass('opaque')
+        // whiteOutsHere.removeClass('opaque')
+        catTitlesAll.addClass('active')
         $('html').velocity('scroll', {
             container: photoBox,
             axis: 'x',
