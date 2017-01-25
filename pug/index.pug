@@ -18,6 +18,7 @@ html(lang='en')
         //-     var categories = !{JSON.stringify(categories)}
 
         script(src='js/zepto.min.js')
+        script(src='js/velocity.min.js')
         script(src='js/main.js')
 
         link(href='stylesheets/style.css', rel='stylesheet')
@@ -47,6 +48,7 @@ html(lang='en')
                                         p #{entry.title}
                                     else
                                         .img-container
+                                            .whiteout
                                             img.color(src='img/'+key+'/'+entry.name+'_tn.jpg')
                                             img.gray(src='img/'+key+'/'+entry.name+'_tn_gray.jpg')
                         each entry in cat.entries

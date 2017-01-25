@@ -1,6 +1,7 @@
-index.html : pug/index.pug js/coolstuff.json stylesheets/style.css
+index.html: pug/index.pug js/coolstuff.json stylesheets/style.css
 	pug pug/index.pug -O js/coolstuff.json -o .
 	cp node_modules/zepto/dist/zepto.min.js js
+	cp node_modules/velocity-animate/velocity.min.js js
 
 stylesheets/style.css: stylus/*
 	stylus stylus/style.styl -o stylesheets

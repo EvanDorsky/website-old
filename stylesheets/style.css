@@ -103,7 +103,6 @@ h6 {
 .cat.courses .cat-img {
   flex: 0 1 auto;
   text-align: center;
-  border-radius: 3px;
   font-weight: 200;
   font-size: 1.4rem;
   padding: 0.75rem;
@@ -113,18 +112,20 @@ h6 {
   height: auto;
 }
 .cat-img {
+  border-radius: 3px;
   flex: 0;
 }
 .cat-img:not(:last-child) {
   padding-right: 2rem;
 }
 .img-container {
+  overflow: hidden;
+  border-radius: 3px;
   height: 10rem;
   position: relative;
 }
 .img-container img {
   height: 100%;
-  border-radius: 3px;
 }
 .img-container img.color {
   position: absolute;
@@ -133,12 +134,23 @@ h6 {
   display: none;
 }
 .img-container img.color.active {
-  opacity: 1;
+  opacity: 1 !important;
   display: block;
 }
 .img-container:hover img.color {
   display: block;
   opacity: 0.7;
+}
+.whiteout {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 100ms ease-in-out;
+}
+.whiteout.opaque {
+  opacity: 0.3;
 }
 .cat-details {
   display: none;

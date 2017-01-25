@@ -81,7 +81,6 @@ h1, h2, h3, h4, h5, h6
         flex 0 1 auto
         text-align center
         
-        border-radius 3px
         font-weight 200
         font-size 1.4rem
 
@@ -94,19 +93,21 @@ h1, h2, h3, h4, h5, h6
         height auto
 
 .cat-img
+    border-radius 3px
     flex 0
      
     &:not(:last-child)
         padding-right 2rem
 
 .img-container
+    overflow hidden
+    border-radius 3px
     height 10rem
     
     position relative
 
     img
         height 100%
-        border-radius 3px
 
         &.color
             position absolute
@@ -115,13 +116,25 @@ h1, h2, h3, h4, h5, h6
             display none
 
             &.active
-                opacity 1
+                opacity 1 !important
                 display block
                 
     &:hover
         img.color
             display block
             opacity 0.7
+
+.whiteout
+    position absolute
+    background-color white
+    width 100%
+    height 100%
+    opacity 0
+
+    transition opacity 100ms ease-in-out
+
+    &.opaque
+        opacity 0.3
                 
 .cat-details
     display none
