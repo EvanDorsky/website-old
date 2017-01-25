@@ -22,7 +22,7 @@ def gray(path):
         ])
 
 def process(path):
-    path_tn = thumb(path, 360)
+    path_tn = thumb(path, 500)
     gray(path)
     gray(path_tn)
 

@@ -68,6 +68,15 @@ h6 {
 .me h1 {
   margin: 1rem;
 }
+.me .email {
+  font-size: 0.9rem;
+  font-weight: 200;
+  text-align: center;
+}
+.me .email em {
+  font-style: normal;
+  font-size: 0.5rem;
+}
 .me .info {
   margin: 1rem;
 }
