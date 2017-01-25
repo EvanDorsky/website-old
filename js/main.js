@@ -27,6 +27,7 @@ function handleImgClick() {
     var scrollOffset = 0
     for (var i=0; $(catImgsHere[i]).attr('name') != name; i++)
         scrollOffset += $(catImgsHere[i]).width()
+    scrollOffset -= photoBox.scrollLeft()
     // defined variables
 
     // reset everything
@@ -38,13 +39,12 @@ function handleImgClick() {
     if (wasHidden) {
         whiteOutsAll.addClass('opaque')
         whiteOutsHere.removeClass('opaque')
-        photoBox.scrollLeft(scrollOffset)
-        // $('html').velocity('scroll', {
-        //     container: photoBox,
-        //     axis: 'x',
-        //     duration: 200,
-        //     offset: scrollOffset+1
-        // })
+        $('html').velocity('scroll', {
+            container: photoBox,
+            axis: 'x',
+            duration: Math.abs(scrollOffset),
+            offset: scrollOffset
+        })
         colorImg.addClass('active')
         catDetail.show()
     }

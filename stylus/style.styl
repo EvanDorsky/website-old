@@ -3,6 +3,8 @@
 bg-color = white
 text-color = black
 
+focus-time = 300ms
+
 *
     padding 0
     margin 0
@@ -109,19 +111,19 @@ h1, h2, h3, h4, h5, h6
     img
         height 100%
 
+        transition opacity focus-time
         &.color
+            border-radius 3px
             position absolute
             top 0
             left 0
-            display none
+            opacity 0
 
             &.active
                 opacity 1 !important
-                display block
                 
     &:hover
         img.color
-            display block
             opacity 0.7
 
 .whiteout
@@ -131,10 +133,12 @@ h1, h2, h3, h4, h5, h6
     height 100%
     opacity 0
 
-    transition opacity 100ms ease-in-out
+    transition opacity focus-time
 
     &.opaque
         opacity 0.3
                 
 .cat-details
     display none
+
+    text-align center
