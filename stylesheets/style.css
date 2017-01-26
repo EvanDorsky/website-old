@@ -89,6 +89,7 @@ h6 {
 .cat-title {
   font-size: 1.6rem;
   font-weight: 200;
+  transition: opacity 300ms;
 }
 .cat-title.active {
   opacity: 0.4;
@@ -157,5 +158,5 @@ h6 {
 }
 .cat-details {
   display: none;
-  text-align: center;
+  padding: 1rem;
 }
