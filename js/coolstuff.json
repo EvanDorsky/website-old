@@ -13,7 +13,7 @@
                 },
                 {
                     "name": "spaceteam",
-                    "desc": "Spaceteam"
+                    "desc": "I worked on a team to build an arcade cabinet based on the cooperative smartphone game Spaceteam. Each player receives commands at their console, which has a suite of buttons, switches, and sliders. Many commands received at one console can only be completed at another. Players must communicate these commands to each other (often by shouting) to pilot their spaceship for as long as they can."
                 }
             ]
         },
@@ -22,11 +22,11 @@
             "entries": [
                 {
                     "name": "koi",
-                    "desc": "Koi"
+                    "desc": "Dollar Koi Fish - Won Park"
                 },
                 {
                     "name": "squirrel",
-                    "desc": "Squirrel"
+                    "desc": "Squirrel - Michael G. LaFosse"
                 }
             ]
         },
@@ -35,15 +35,15 @@
             "entries": [
                 {
                     "name": "lospadres",
-                    "desc": "Los Padres"
+                    "desc": "Los Padres National Forest - Big Sur"
                 },
                 {
                     "name": "yoclimb",
-                    "desc": "Tuolumne Meadows"
+                    "desc": "Climbing near Tuolumne Meadows - Yosemite"
                 },
                 {
                     "name": "yowona",
-                    "desc": "Wawona"
+                    "desc": "Wawona - Yosemite"
                 }
             ]
         },

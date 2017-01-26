@@ -22,7 +22,7 @@ function handleImgClick() {
     var catImgsHere = photoBox.find('.cat-img')
     var whiteOutsHere = photoBox.find('.whiteout')
 
-    var wasHidden = catDetail.css('display') == 'none'
+    var wasHidden = catDetail.css('opacity') == 0
 
     var whiteOutsAll = $('.whiteout')
 
@@ -36,7 +36,7 @@ function handleImgClick() {
     whiteOutsAll.removeClass('opaque')
     colorImgsAll.removeClass('active')
     catTitlesAll.removeClass('active')
-    catDetails.hide()
+    catDetails.removeClass('active')
 
     // only show if it wasn't showing
     if (wasHidden) {
@@ -50,6 +50,6 @@ function handleImgClick() {
             offset: scrollOffset
         })
         colorImg.addClass('active')
-        catDetail.show()
+        catDetail.addClass('active')
     }
 }
