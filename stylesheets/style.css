@@ -184,6 +184,7 @@ h6 {
 .cat-details {
   max-height: 0;
   opacity: 0;
+  padding: 0 1rem;
   max-width: 600px;
   margin: 0 auto;
   transition: padding 300ms, opacity 300ms, max-height 300ms;
