@@ -28,6 +28,31 @@
   font-weight: 700;
   src: url("../font/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
 }
+@font-face {
+  font-family: Arvo;
+  font-weight: 400;
+  src: url("../font/arvo/Arvo-Regular.ttf");
+}
+@font-face {
+  font-family: Arvo;
+  font-weight: 700;
+  src: url("../font/arvo/Arvo-Bold.ttf");
+}
+@font-face {
+  font-family: Nixie One;
+  font-weight: 400;
+  src: url("../font/nixieone/NixieOne-Regular.otf");
+}
+@font-face {
+  font-family: Bitstream Vera;
+  font-weight: 400;
+  src: url("../font/bitstream/VeraSerif.ttf");
+}
+@font-face {
+  font-family: Bitstream Vera;
+  font-weight: 700;
+  src: url("../font/bitstream/VeraSerif-Bold.ttf");
+}
 * {
   padding: 0;
   margin: 0;
@@ -88,7 +113,7 @@ h6 {
 }
 .cat-title {
   font-size: 1.6rem;
-  font-weight: 200;
+  font-weight: 400;
   transition: opacity 300ms;
 }
 .cat-title.active {
@@ -159,4 +184,6 @@ h6 {
 .cat-details {
   display: none;
   padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
 }

@@ -5,16 +5,15 @@
             "entries": [
                 {
                     "name": "ivani",
-                    "desc":"Worked on a team of Olin students with Ivani, \
-                    an IoT startup, to explore new markets for their \
-                    low-power presence sensing technology. Developed \
-                    a prototype of an outlet-based power monitor \
-                    intended primarily for use in hospitals and \
+                    "desc": "I worked on a team of Olin students with Ivani, \
+                    an IoT startup. We explored new markets for their \
+                    low-power presence sensing technology, developed \
+                    a prototype of an outlet-based power monitor, and \
                     filed a provisional patent."
                 },
                 {
                     "name": "spaceteam",
-                    "desc":"Spaceteam"
+                    "desc": "Spaceteam"
                 }
             ]
         },
@@ -23,11 +22,11 @@
             "entries": [
                 {
                     "name": "koi",
-                    "desc":"Koi"
+                    "desc": "Koi"
                 },
                 {
                     "name": "squirrel",
-                    "desc":"Squirrel"
+                    "desc": "Squirrel"
                 }
             ]
         },
@@ -36,15 +35,15 @@
             "entries": [
                 {
                     "name": "lospadres",
-                    "desc":"Los Padres"
+                    "desc": "Los Padres"
                 },
                 {
                     "name": "yoclimb",
-                    "desc":"Tuolumne Meadows"
+                    "desc": "Tuolumne Meadows"
                 },
                 {
                     "name": "yowona",
-                    "desc":"Wawona"
+                    "desc": "Wawona"
                 }
             ]
         },
@@ -54,12 +53,12 @@
                 {
                     "name": "olinjs",
                     "title": "Olin.js",
-                    "desc":"A course on web development"
+                    "desc": "A course on web development"
                 },
                 {
                     "name": "practicalee",
                     "title": "Practical EE",
-                    "desc":"A course on introductory electrical engineering concepts"
+                    "desc": "A course on introductory electrical engineering concepts"
                 }
             ]
         },

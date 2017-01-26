@@ -6,6 +6,7 @@
   "license": "ISC",
   "dependencies": {
     "pug": "^2.0.0-beta6",
+    "velocity-animate": "^1.4.0",
     "zepto": "^1.2.0"
   }
 }
