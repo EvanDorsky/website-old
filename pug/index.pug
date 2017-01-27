@@ -45,6 +45,7 @@ html(lang='en')
                             each entry in cat.entries
                                 .cat-img(name=entry.name)
                                     if key == "courses"
+                                        .whiteout
                                         p #{entry.title}
                                     else
                                         .img-container

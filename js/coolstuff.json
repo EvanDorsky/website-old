@@ -14,6 +14,11 @@
                 {
                     "name": "spaceteam",
                     "desc": "I worked on a team to build an arcade cabinet based on the cooperative smartphone game Spaceteam. Each player receives commands at their console, which has a suite of buttons, switches, and sliders. Many commands received at one console can only be completed at another. Players must communicate these commands to each other (often by shouting) to pilot their spaceship for as long as they can."
+                },
+                {
+                    "name": "pendulum",
+                    "desc": "I worked with a partner to design a \
+                    rotary inverted pendulum."
                 }
             ]
         },
@@ -21,12 +26,12 @@
             "title": "Origami",
             "entries": [
                 {
-                    "name": "koi",
-                    "desc": "Dollar Koi Fish - Won Park"
-                },
-                {
                     "name": "squirrel",
                     "desc": "Squirrel - Michael G. LaFosse"
+                },
+                {
+                    "name": "koi",
+                    "desc": "Dollar Koi Fish - Won Park"
                 }
             ]
         },
@@ -34,16 +39,16 @@
             "title": "Outdoors",
             "entries": [
                 {
-                    "name": "lospadres",
-                    "desc": "Los Padres National Forest - Big Sur"
+                    "name": "yowona",
+                    "desc": "Wawona - Yosemite"
                 },
                 {
                     "name": "yoclimb",
                     "desc": "Climbing near Tuolumne Meadows - Yosemite"
                 },
                 {
-                    "name": "yowona",
-                    "desc": "Wawona - Yosemite"
+                    "name": "lospadres",
+                    "desc": "Los Padres National Forest - Big Sur"
                 }
             ]
         },
@@ -51,24 +56,42 @@
             "title": "Courses",
             "entries": [
                 {
-                    "name": "olinjs",
-                    "title": "Olin.js",
-                    "desc": "A course on web development"
-                },
-                {
                     "name": "practicalee",
                     "title": "Practical EE",
                     "desc": "A course on introductory electrical engineering concepts"
+                },
+                {
+                    "name": "olinjs",
+                    "title": "Olin.js",
+                    "desc": "A course on web development"
                 }
             ]
         },
         "music": {
             "title": "Music",
-            "entries": []
+            "entries": [
+                {
+                    "name": "olin-chamber",
+                    "desc": "Olin Chamber Ensemble"
+                },
+                {
+                    "name": "oco",
+                    "desc": "Olin Conductorless Orchestra"
+                },
+                {
+                    "name": "pit",
+                    "desc": "Pit violinist - Pirates of Penzance, South Pacific, Bye Bye Birdie, Damn Yankees, The Wiz, Into the Woods, Once Upon a Mattress"
+                }
+            ]
         },
         "fire": {
             "title": "Fire",
-            "entries": []
+            "entries": [
+                {
+                    "name": "ofac",
+                    "desc": "Olin Fire Arts Club"
+                }
+            ]
         }
     }
 }

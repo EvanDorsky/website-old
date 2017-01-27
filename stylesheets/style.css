@@ -130,6 +130,7 @@ h6 {
   border-radius: 3px;
 }
 .cat.courses .cat-img {
+  position: relative;
   flex: 0 1 auto;
   text-align: center;
   font-weight: 200;
@@ -140,9 +141,16 @@ h6 {
   background-color: #000;
   height: auto;
 }
+.cat.courses .whiteout {
+  margin: -0.75rem;
+}
 .cat-img {
+  transition: opacity 300ms;
   border-radius: 3px;
   flex: 0;
+}
+.cat-img.fade {
+  opacity: 0.7;
 }
 .cat-img:not(:last-child) {
   padding-right: 2rem;

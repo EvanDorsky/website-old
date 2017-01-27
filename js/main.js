@@ -20,11 +20,11 @@ function handleImgClick() {
     var catTitlesAll = $('.cat-title')
 
     var catImgsHere = photoBox.find('.cat-img')
-    var whiteOutsHere = photoBox.find('.whiteout')
 
     var wasHidden = catDetail.css('opacity') == 0
 
-    var whiteOutsAll = $('.whiteout')
+    var whiteOuts = $('.whiteout')
+    var whiteOut = catImg.find('.whiteout')
 
     var scrollOffset = 0
     for (var i=0; $(catImgsHere[i]).attr('name') != name; i++)
@@ -33,15 +33,15 @@ function handleImgClick() {
     // defined variables
 
     // reset everything
-    whiteOutsAll.removeClass('opaque')
+    whiteOuts.removeClass('opaque')
     colorImgsAll.removeClass('active')
     catTitlesAll.removeClass('active')
     catDetails.removeClass('active')
 
     // only show if it wasn't showing
     if (wasHidden) {
-        whiteOutsAll.addClass('opaque')
-        // whiteOutsHere.removeClass('opaque')
+        whiteOuts.addClass('opaque')
+        whiteOut.removeClass('opaque')
         catTitlesAll.addClass('active')
         $('html').velocity('scroll', {
             container: photoBox,
