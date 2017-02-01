@@ -26,14 +26,15 @@ html(lang='en')
     body
         .container
             .me
+                img.evan(src='img/viola-1-new.jpg')
                 .header
                     h1 Evan Dorsky
                     .email evan.dorsky@icloud.com
 
                 .info
                     ul
-                        li Olin College Electrical and Computer Engineering '16
-                        li SPG Hardware System Integration Engineer at Apple
+                        li Olin College Electrical and Computer Engineering
+                        li Hardware System Integration Engineer at Apple
                         li San Francisco
                     ul.past
                         li Course designer and teaching team member at Olin College
@@ -53,6 +54,13 @@ html(lang='en')
                                             img.color(src='img/'+key+'/'+entry.name+'_tn.jpg')
                                             img.gray(src='img/'+key+'/'+entry.name+'_tn_gray.jpg')
                         each entry in cat.entries
-                            .cat-details(name=entry.name)
-                                p #{entry.desc}
+                            if key == "courses"
+                                .cat-details(name=entry.name)
+                                    .role #{entry.role}
+                                    p #{entry.desc}
+                            else
+                                .cat-details(name=entry.name)
+                                    h2 #{entry.title}
+                                    .role #{entry.role}
+                                    p #{entry.desc}
                         .cat-title #{cat.title}

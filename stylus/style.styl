@@ -42,10 +42,14 @@ h1, h2, h3, h4, h5, h6
     flex 1 100%
     flex-flow row wrap
     
-    justify-content space-around
+    justify-content center
+    align-items center
+
+    .header
+        margin 1rem 2rem
     
     h1
-        margin 1rem
+        margin-bottom .5rem
 
     .email
         font-size .9rem
@@ -55,9 +59,13 @@ h1, h2, h3, h4, h5, h6
         em
             font-style normal
             font-size .5rem
+
+    img.evan
+        height 6rem
+        border-radius 50%
     
     .info
-        margin 1rem
+        margin 1rem 0
 
     ul.past
         opacity .5
@@ -87,17 +95,19 @@ h1, h2, h3, h4, h5, h6
     border-radius 3px
 
 .cat.courses
+    .photo-box
+        flex-flow row wrap
     .cat-img
         position relative
         
-        flex 0 1 auto
+        flex 0 0 auto
         text-align center
         
         font-weight 200
         font-size 1.4rem
 
         padding .75rem
-        margin-right 2rem
+        margin .5rem 1rem
 
         color white
         background-color #000
@@ -168,8 +178,22 @@ h1, h2, h3, h4, h5, h6
     transition padding focus-time,
         opacity focus-time,
         max-height focus-time
+    
+    h2
+        transition padding focus-time
+
+    .role
+        text-transform uppercase
+        font-size .75rem
+        font-weight 600
+    
+    p
+        padding .5rem 1rem 0 1rem
 
     &.active
         max-height 600px
-        padding 1rem
+        padding-bottom 1rem
         opacity 1
+        
+        h2
+            padding-top .5rem

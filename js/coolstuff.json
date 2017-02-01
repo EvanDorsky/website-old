@@ -5,6 +5,8 @@
             "entries": [
                 {
                     "name": "ivani",
+                    "title": "Smart Outlet",
+                    "role": "Electrical engineer",
                     "desc": "I worked on a team of Olin students with Ivani, \
                     an IoT startup. We explored new markets for their \
                     low-power presence sensing technology, developed \
@@ -13,10 +15,14 @@
                 },
                 {
                     "name": "spaceteam",
+                    "title": "Spaceteam Penny Arcade",
+                    "role": "System integrator, embedded developer",
                     "desc": "I worked on a team to build an arcade cabinet based on the cooperative smartphone game Spaceteam. Each player receives commands at their console, which has a suite of buttons, switches, and sliders. Many commands received at one console can only be completed at another. Players must communicate these commands to each other (often by shouting) to pilot their spaceship for as long as they can."
                 },
                 {
                     "name": "pendulum",
+                    "title": "Inverted Pendulum",
+                    "role": "",
                     "desc": "I worked with a partner to design a \
                     rotary inverted pendulum."
                 }
@@ -27,10 +33,14 @@
             "entries": [
                 {
                     "name": "squirrel",
+                    "title": "",
+                    "role": "",
                     "desc": "Squirrel - Michael G. LaFosse"
                 },
                 {
                     "name": "koi",
+                    "title": "",
+                    "role": "",
                     "desc": "Dollar Koi Fish - Won Park"
                 }
             ]
@@ -40,14 +50,20 @@
             "entries": [
                 {
                     "name": "yowona",
+                    "title": "",
+                    "role": "",
                     "desc": "Wawona - Yosemite"
                 },
                 {
                     "name": "yoclimb",
+                    "title": "",
+                    "role": "",
                     "desc": "Climbing near Tuolumne Meadows - Yosemite"
                 },
                 {
                     "name": "lospadres",
+                    "title": "",
+                    "role": "",
                     "desc": "Los Padres National Forest - Big Sur"
                 }
             ]
@@ -58,12 +74,50 @@
                 {
                     "name": "practicalee",
                     "title": "Practical EE",
-                    "desc": "A course on introductory electrical engineering concepts"
+                    "role": "Course designer, instructor",
+                    "desc": ""
+                },
+                {
+                    "name": "circuits",
+                    "title": "Circuits",
+                    "role": "Peer tutor",
+                    "desc": ""
+                },
+                {
+                    "name": "controls",
+                    "title": "Controls",
+                    "role": "Course assistant",
+                    "desc": ""
                 },
                 {
                     "name": "olinjs",
                     "title": "Olin.js",
-                    "desc": "A course on web development"
+                    "role": "Course designer, instructor",
+                    "desc": ""
+                },
+                {
+                    "name": "poe",
+                    "title": "PoE",
+                    "role": "Course assistant",
+                    "desc": ""
+                },
+                {
+                    "name": "isim",
+                    "title": "ISIM",
+                    "role": "Course assistant",
+                    "desc": ""
+                },
+                {
+                    "name": "rwm",
+                    "title": "RWM",
+                    "role": "Course assistant",
+                    "desc": ""
+                },
+                {
+                    "name": "modcon",
+                    "title": "ModCon",
+                    "role": "Course assistant",
+                    "desc": ""
                 }
             ]
         },
@@ -72,15 +126,21 @@
             "entries": [
                 {
                     "name": "olin-chamber",
-                    "desc": "Olin Chamber Ensemble"
+                    "title": "Olin Chamber Ensemble",
+                    "role": "Founding member, violinist, violist",
+                    "desc": ""
                 },
                 {
                     "name": "oco",
-                    "desc": "Olin Conductorless Orchestra"
+                    "title": "Olin Conductorless Orchestra",
+                    "role": "Navigator, violinist, violist",
+                    "desc": ""
                 },
                 {
                     "name": "pit",
-                    "desc": "Pit violinist - Pirates of Penzance, South Pacific, Bye Bye Birdie, Damn Yankees, The Wiz, Into the Woods, Once Upon a Mattress"
+                    "title": "Musical Pit Orchestra",
+                    "role": "Violinist, violist",
+                    "desc": "Pirates of Penzance, South Pacific, Bye Bye Birdie, Damn Yankees, The Wiz, Into the Woods, Once Upon a Mattress, You're a Good Man, Charlie Brown"
                 }
             ]
         },
@@ -89,6 +149,8 @@
             "entries": [
                 {
                     "name": "ofac",
+                    "title": "",
+                    "role": "",
                     "desc": "Olin Fire Arts Club"
                 }
             ]
