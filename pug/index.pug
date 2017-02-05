@@ -34,7 +34,7 @@ html(lang='en')
                 .info
                     ul
                         li Olin College Electrical and Computer Engineering
-                        li Hardware System Integration Engineer at Apple
+                        li Apple Hardware System Integration Engineer
                         li San Francisco
                     ul.past
                         li Course designer and teaching team member at Olin College
@@ -58,9 +58,11 @@ html(lang='en')
                                 .cat-details(name=entry.name)
                                     .role #{entry.role}
                                     p #{entry.desc}
+                                    .date #{entry.date}
                             else
                                 .cat-details(name=entry.name)
                                     h2 #{entry.title}
                                     .role #{entry.role}
                                     p #{entry.desc}
+                                    .date #{entry.date}
                         .cat-title #{cat.title}

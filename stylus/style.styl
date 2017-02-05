@@ -186,14 +186,28 @@ h1, h2, h3, h4, h5, h6
         text-transform uppercase
         font-size .75rem
         font-weight 600
+
+    .date
+        font-size .85rem
+        text-transform uppercase
+        text-align center
+        padding .5rem
+        opacity 0.6
+        font-weight 200
+        font-style italic
     
     p
-        padding .5rem 1rem 0 1rem
+        padding 0 1rem
+        transition padding-top focus-time
+        padding 0
 
     &.active
         max-height 600px
         padding-bottom 1rem
         opacity 1
         
+        p
+            padding-top .5rem
+
         h2
             padding-top .5rem

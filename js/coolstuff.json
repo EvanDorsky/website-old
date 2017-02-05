@@ -6,7 +6,8 @@
                 {
                     "name": "ivani",
                     "title": "Smart Outlet",
-                    "role": "Electrical engineer",
+                    "role": "Electrical engineer, user-oriented designer",
+                    "date": "Spring 2016",
                     "desc": "I worked on a team of Olin students with Ivani, \
                     an IoT startup. We explored new markets for their \
                     low-power presence sensing technology, developed \
@@ -17,12 +18,14 @@
                     "name": "spaceteam",
                     "title": "Spaceteam Penny Arcade",
                     "role": "System integrator, embedded developer",
+                    "date": "Spring 2016",
                     "desc": "I worked on a team to build an arcade cabinet based on the cooperative smartphone game Spaceteam. Each player receives commands at their console, which has a suite of buttons, switches, and sliders. Many commands received at one console can only be completed at another. Players must communicate these commands to each other (often by shouting) to pilot their spaceship for as long as they can."
                 },
                 {
                     "name": "pendulum",
                     "title": "Inverted Pendulum",
-                    "role": "",
+                    "role": "Controls engineer, mechanical designer",
+                    "date": "Spring 2015",
                     "desc": "I worked with a partner to design a \
                     rotary inverted pendulum."
                 }
@@ -33,15 +36,17 @@
             "entries": [
                 {
                     "name": "squirrel",
-                    "title": "",
-                    "role": "",
-                    "desc": "Squirrel - Michael G. LaFosse"
+                    "title": "Squirrel",
+                    "role": "Michael G. LaFosse",
+                    "date": "Winter 2016",
+                    "desc": ""
                 },
                 {
                     "name": "koi",
-                    "title": "",
-                    "role": "",
-                    "desc": "Dollar Koi Fish - Won Park"
+                    "title": "Dollar Koi Fish",
+                    "role": "Won Park",
+                    "date": "Winter 2016",
+                    "desc": ""
                 }
             ]
         },
@@ -50,21 +55,24 @@
             "entries": [
                 {
                     "name": "yowona",
-                    "title": "",
-                    "role": "",
-                    "desc": "Wawona - Yosemite"
+                    "title": "Wawona",
+                    "role": "Yosemite",
+                    "desc": "",
+                    "date": "Winter 2016",
                 },
                 {
                     "name": "yoclimb",
-                    "title": "",
-                    "role": "",
-                    "desc": "Climbing near Tuolumne Meadows - Yosemite"
+                    "title": "Tuolumne Meadows",
+                    "role": "Yosemite",
+                    "desc": "",
+                    "date": "Summer 2016",
                 },
                 {
                     "name": "lospadres",
-                    "title": "",
-                    "role": "",
-                    "desc": "Los Padres National Forest - Big Sur"
+                    "title": "Los Padres National Forest",
+                    "role": "Big Sur",
+                    "desc": "",
+                    "date": "Summer 2015",
                 }
             ]
         },
@@ -75,48 +83,56 @@
                     "name": "practicalee",
                     "title": "Practical EE",
                     "role": "Course designer, instructor",
+                    "date": "Spring 2016",
                     "desc": ""
                 },
                 {
                     "name": "circuits",
                     "title": "Circuits",
                     "role": "Peer tutor",
+                    "date": "Spring 2016",
                     "desc": ""
                 },
                 {
                     "name": "controls",
                     "title": "Controls",
                     "role": "Course assistant",
+                    "date": "Fall 2016",
                     "desc": ""
                 },
                 {
                     "name": "olinjs",
                     "title": "Olin.js",
                     "role": "Course designer, instructor",
+                    "date": "Spring 2015",
                     "desc": ""
                 },
                 {
                     "name": "poe",
                     "title": "PoE",
                     "role": "Course assistant",
+                    "date": "Fall 2015",
                     "desc": ""
                 },
                 {
                     "name": "isim",
                     "title": "ISIM",
                     "role": "Course assistant",
+                    "date": "Fall 2014, 2015",
                     "desc": ""
                 },
                 {
                     "name": "rwm",
                     "title": "RWM",
                     "role": "Course assistant",
+                    "date": "Spring 2014",
                     "desc": ""
                 },
                 {
                     "name": "modcon",
                     "title": "ModCon",
                     "role": "Course assistant",
+                    "date": "Fall 2013",
                     "desc": ""
                 }
             ]
@@ -128,19 +144,22 @@
                     "name": "olin-chamber",
                     "title": "Olin Chamber Ensemble",
                     "role": "Founding member, violinist, violist",
+                    "date": "Spring 2014 - Spring 2016",
                     "desc": ""
                 },
                 {
                     "name": "oco",
                     "title": "Olin Conductorless Orchestra",
                     "role": "Navigator, violinist, violist",
+                    "date": "Fall 2012 - Spring 2016",
                     "desc": ""
                 },
                 {
                     "name": "pit",
                     "title": "Musical Pit Orchestra",
                     "role": "Violinist, violist",
-                    "desc": "Pirates of Penzance, South Pacific, Bye Bye Birdie, Damn Yankees, The Wiz, Into the Woods, Once Upon a Mattress, You're a Good Man, Charlie Brown"
+                    "date": "Fall 2008 - Spring 2012",
+                    // "desc": "Pirates of Penzance, South Pacific, Bye Bye Birdie, Damn Yankees, The Wiz, Into the Woods, Once Upon a Mattress, You're a Good Man, Charlie Brown"
                 }
             ]
         },
@@ -149,9 +168,10 @@
             "entries": [
                 {
                     "name": "ofac",
-                    "title": "",
-                    "role": "",
-                    "desc": "Olin Fire Arts Club"
+                    "title": "Olin Fire Arts Club",
+                    "role": "President, Vice President, member",
+                    "date": "Fall 2012 - Spring 2016",
+                    "desc": ""
                 }
             ]
         }
