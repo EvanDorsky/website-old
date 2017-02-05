@@ -109,30 +109,16 @@
                 },
                 {
                     "name": "poe",
-                    "title": "PoE",
+                    "title": "Principles of Engineering",
                     "role": "Course assistant",
                     "date": "Fall 2015",
                     "desc": ""
                 },
                 {
-                    "name": "isim",
-                    "title": "ISIM",
+                    "name": "circuits-intro",
+                    "title": "Intro EE Courses",
                     "role": "Course assistant",
-                    "date": "Fall 2014, 2015",
-                    "desc": ""
-                },
-                {
-                    "name": "rwm",
-                    "title": "RWM",
-                    "role": "Course assistant",
-                    "date": "Spring 2014",
-                    "desc": ""
-                },
-                {
-                    "name": "modcon",
-                    "title": "ModCon",
-                    "role": "Course assistant",
-                    "date": "Fall 2013",
+                    "date": "Fall 2013 - Fall 2016",
                     "desc": ""
                 }
             ]
