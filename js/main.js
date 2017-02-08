@@ -14,14 +14,19 @@ function handleImgClick() {
     var catDetail = $('.cat-details[name='+name+']')
     var catDetails = $('.cat-details')
 
+    var wasHidden = !catDetail.hasClass('active')
+
+    if (wasHidden)
+        catDetails = catDetails.filter(function(i) {
+            return $(catDetails[i]).attr('name') != name
+        })
+
     var colorImg = $('.cat-img[name='+name+']').find('img.color')
     var colorImgsAll = $('.cat-img').find('img.color')
 
     var catTitlesAll = $('.cat-title')
 
     var catImgsHere = photoBox.find('.cat-img')
-
-    var wasHidden = !catDetail.hasClass('active')
 
     var whiteOuts = $('.whiteout')
     var whiteOut = catImg.find('.whiteout')
@@ -37,6 +42,9 @@ function handleImgClick() {
     colorImgsAll.removeClass('active')
     catTitlesAll.removeClass('active')
     catDetails.removeClass('active')
+    setTimeout(function() {
+        catDetails.removeClass('visible')
+    }, 300)
 
     // only show if it wasn't showing
     if (wasHidden) {
@@ -50,6 +58,6 @@ function handleImgClick() {
             offset: scrollOffset
         })
         colorImg.addClass('active')
-        catDetail.addClass('active')
+        catDetail.addClass('active visible')
     }
 }

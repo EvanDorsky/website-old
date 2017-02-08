@@ -201,6 +201,7 @@ h6 {
   opacity: 0.3;
 }
 .cat-details {
+  visibility: hidden;
   max-height: 0;
   opacity: 0;
   padding: 0 1rem;
@@ -229,6 +230,9 @@ h6 {
   padding: 0 1rem;
   transition: padding-top 300ms;
   padding: 0;
+}
+.cat-details.visible {
+  visibility: visible;
 }
 .cat-details.active {
   max-height: 600px;
