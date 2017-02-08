@@ -21,7 +21,7 @@ function handleImgClick() {
 
     var catImgsHere = photoBox.find('.cat-img')
 
-    var wasHidden = catDetail.css('opacity') == 0
+    var wasHidden = !catDetail.hasClass('active')
 
     var whiteOuts = $('.whiteout')
     var whiteOut = catImg.find('.whiteout')
