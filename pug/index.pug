@@ -21,7 +21,7 @@ html(lang='en')
         script(src='js/velocity.min.js')
         script(src='js/main.js')
 
-        link(href='stylesheets/style.css', rel='stylesheet')
+        link(href='css/style.css', rel='stylesheet')
 
     body
         .container
@@ -33,11 +33,11 @@ html(lang='en')
 
                 .info
                     ul
-                        li Electrical and Computer Engineering - Olin College
-                        li Hardware System Integration Engineer - Apple
+                        li Olin College Electrical and Computer Engineering
+                        li Apple Hardware System Integration Engineer
                         li San Francisco
-                    ul.past
-                        li Course designer and teaching team member at Olin College
+                    //- ul.past
+                    //-     li Course designer and teaching team member at Olin College
 
             .portfolio
                 each cat, key in categories
@@ -53,16 +53,17 @@ html(lang='en')
                                             .whiteout
                                             img.color(src='img/'+key+'/'+entry.name+'_tn.jpg')
                                             img.gray(src='img/'+key+'/'+entry.name+'_tn_gray.jpg')
-                        each entry in cat.entries
-                            if key == "courses"
-                                .cat-details(name=entry.name)
-                                    .role #{entry.role}
-                                    p #{entry.desc}
-                                    .date #{entry.date}
-                            else
-                                .cat-details(name=entry.name)
-                                    h2 #{entry.title}
-                                    .role #{entry.role}
-                                    p #{entry.desc}
-                                    .date #{entry.date}
+                        .details-box
+                            each entry in cat.entries
+                                if key == "courses"
+                                    .cat-details(name=entry.name)
+                                        .role #{entry.role}
+                                        p #{entry.desc}
+                                        .date #{entry.date}
+                                else
+                                    .cat-details(name=entry.name)
+                                        h2 #{entry.title}
+                                        .role #{entry.role}
+                                        p #{entry.desc}
+                                        .date #{entry.date}
                         .cat-title #{cat.title}
