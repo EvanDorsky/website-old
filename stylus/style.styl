@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5, h6
         
 .cat-details
     visibility hidden
-    max-height 0
+    height 0
     opacity 0
 
     padding 0 1rem
@@ -177,8 +177,7 @@ h1, h2, h3, h4, h5, h6
     margin 0 auto
 
     transition padding focus-time,
-        opacity focus-time,
-        max-height focus-time
+        opacity focus-time
     
     h2
         transition padding focus-time
@@ -206,12 +205,13 @@ h1, h2, h3, h4, h5, h6
         visibility visible
 
     &.active
-        max-height 600px
-        padding-bottom 1rem
+        height auto
+        // max-height 600px
+        // padding-bottom 1rem
         opacity 1
         
-        p
-            padding-top .5rem
+        // p
+        //     padding-top .5rem
 
-        h2
-            padding-top .5rem
+        // h2
+        //     padding-top .5rem

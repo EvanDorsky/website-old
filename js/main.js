@@ -12,6 +12,7 @@ function handleImgClick() {
     var catImg = $(this)
 
     var catDetail = $('.cat-details[name='+name+']')
+    var catAll = $('.cat-details')
     var catDetails = $('.cat-details')
 
     var wasHidden = !catDetail.hasClass('active')
@@ -37,6 +38,13 @@ function handleImgClick() {
     scrollOffset -= photoBox.scrollLeft()
     // defined variables
 
+    console.log('==============')
+    catAll.each(function(i) {
+        el = catAll[i]
+        if ($(el).height()){
+            console.log($(el).attr('name')+' '+$(el).height())
+        }
+    })
     // reset everything
     whiteOuts.removeClass('opaque')
     colorImgsAll.removeClass('active')
@@ -59,5 +67,20 @@ function handleImgClick() {
         })
         colorImg.addClass('active')
         catDetail.addClass('active visible')
+        catAll.each(function(i) {
+            el = catAll[i]
+            if ($(el).height()){
+                console.log($(el).attr('name')+' '+$(el).height())
+            }
+        })
+        setTimeout(function() {
+            console.log('After settling=======')
+            catAll.each(function(i) {
+                el = catAll[i]
+                if ($(el).height()){
+                    console.log($(el).attr('name')+' '+$(el).height())
+                }
+            })
+        }, 1000)
     }
 }
