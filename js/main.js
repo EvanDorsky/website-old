@@ -44,6 +44,7 @@ function handleImgClick() {
     catTitlesAll.removeClass('active')
     catDetails.removeClass('active')
     catDetails.css({'height': 0})
+    // ***this makes things go away if you click too fast***
     setTimeout(function() {
         catDetails.hide()
     }, 300)
@@ -60,7 +61,6 @@ function handleImgClick() {
             offset: scrollOffset
         })
         colorImg.addClass('active')
-        catDetail.addClass('active')
         catDetail.show()
         catDetail.css({'height': 'auto'})
         catHeight = catDetail.height()
@@ -69,9 +69,10 @@ function handleImgClick() {
             'transition': 'padding 300ms, opacity 300ms, height 300ms'
         })
         setTimeout(function() {
+            catDetail.addClass('active')
             catDetail.css({
-                'height': catHeight
+                'height': catHeight + 16
             })
-        }, 1)
+        }, 5)
     }
 }

@@ -229,17 +229,17 @@ h6 {
 }
 .cat-details p {
   padding: 0 1rem;
+  padding-top: -8px;
   transition: padding-top 300ms;
   padding: 0;
 }
 .cat-details.active {
-  height: auto;
-  padding-bottom: 1rem;
   opacity: 1;
+  padding-bottom: 16px;
 }
 .cat-details.active p {
-  padding-top: 0.5rem;
+  padding-top: 8px;
 }
 .cat-details.active h2 {
-  padding-top: 0.5rem;
+  padding-top: 8px;
 }
