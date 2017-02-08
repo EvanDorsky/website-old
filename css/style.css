@@ -201,9 +201,10 @@ h6 {
   opacity: 0.3;
 }
 .cat-details {
-  visibility: hidden;
+  display: none;
   height: 0;
   opacity: 0;
+  overflow: hidden;
   padding: 0 1rem;
   max-width: 600px;
   margin: 0 auto;
@@ -231,10 +232,14 @@ h6 {
   transition: padding-top 300ms;
   padding: 0;
 }
-.cat-details.visible {
-  visibility: visible;
-}
 .cat-details.active {
   height: auto;
+  padding-bottom: 1rem;
   opacity: 1;
+}
+.cat-details.active p {
+  padding-top: 0.5rem;
+}
+.cat-details.active h2 {
+  padding-top: 0.5rem;
 }

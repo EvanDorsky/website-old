@@ -38,20 +38,14 @@ function handleImgClick() {
     scrollOffset -= photoBox.scrollLeft()
     // defined variables
 
-    console.log('==============')
-    catAll.each(function(i) {
-        el = catAll[i]
-        if ($(el).height()){
-            console.log($(el).attr('name')+' '+$(el).height())
-        }
-    })
     // reset everything
     whiteOuts.removeClass('opaque')
     colorImgsAll.removeClass('active')
     catTitlesAll.removeClass('active')
     catDetails.removeClass('active')
+    catDetails.css({'height': 0})
     setTimeout(function() {
-        catDetails.removeClass('visible')
+        catDetails.hide()
     }, 300)
 
     // only show if it wasn't showing
@@ -66,21 +60,18 @@ function handleImgClick() {
             offset: scrollOffset
         })
         colorImg.addClass('active')
-        catDetail.addClass('active visible')
-        catAll.each(function(i) {
-            el = catAll[i]
-            if ($(el).height()){
-                console.log($(el).attr('name')+' '+$(el).height())
-            }
+        catDetail.addClass('active')
+        catDetail.show()
+        catDetail.css({'height': 'auto'})
+        catHeight = catDetail.height()
+        catDetail.css({
+            'height': 0,
+            'transition': 'padding 300ms, opacity 300ms, height 300ms'
         })
         setTimeout(function() {
-            console.log('After settling=======')
-            catAll.each(function(i) {
-                el = catAll[i]
-                if ($(el).height()){
-                    console.log($(el).attr('name')+' '+$(el).height())
-                }
+            catDetail.css({
+                'height': catHeight
             })
-        }, 1000)
+        }, 1)
     }
 }
