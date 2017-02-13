@@ -28,6 +28,13 @@
                     "date": "Spring 2015",
                     "desc": "I worked with a partner to design a \
                     rotary inverted pendulum."
+                },
+                {
+                    "name": "tyga",
+                    "title": "Stereo Audio Amplifier",
+                    "role": "Integrated circuit designer, layout engineer",
+                    "date": "Spring 2015",
+                    "desc": ""
                 }
             ]
         },
@@ -46,6 +53,13 @@
                     "title": "Dollar Koi Fish",
                     "role": "Won Park",
                     "date": "Winter 2016",
+                    "desc": ""
+                },
+                {
+                    "name": "rose",
+                    "title": "New Kawasaki Rose",
+                    "role": "Toshikazu Kawasaki",
+                    "date": "",
                     "desc": ""
                 }
             ]

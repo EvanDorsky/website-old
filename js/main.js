@@ -2,6 +2,8 @@
     $(document).ready(init)
 })()
 
+var focusTime = 450 // ms
+
 function init() {
     $('.cat-img').click(handleImgClick)
 }
@@ -47,10 +49,10 @@ function handleImgClick() {
     // ***this makes things go away if you click too fast***
     setTimeout(function() {
         catDetails.hide()
-    }, 300)
+    }, focusTime)
 
-    // only show if it wasn't showing
-    if (wasHidden) {
+    // only show if it wasn't showing -- and isn't a course
+    if (wasHidden && !photoBox.parent().hasClass('courses')) {
         whiteOuts.addClass('opaque')
         whiteOut.removeClass('opaque')
         catTitlesAll.addClass('active')
@@ -61,12 +63,16 @@ function handleImgClick() {
             offset: scrollOffset
         })
         colorImg.addClass('active')
+
+        // this breaks courses
+        catDetail.insertBefore($(catDetail).parent().find('div:first-child'))
+
         catDetail.show()
         catDetail.css({'height': 'auto'})
         catHeight = catDetail.height()
         catDetail.css({
             'height': 0,
-            'transition': 'padding 300ms, opacity 300ms, height 300ms'
+            'transition': 'padding '+focusTime+'ms, opacity '+focusTime+'ms, height '+focusTime+'ms'
         })
         setTimeout(function() {
             catDetail.addClass('active')
