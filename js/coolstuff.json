@@ -1,7 +1,7 @@
 {
     "categories": {
         "projects": {
-            "title": "Projects",
+            "title": "Hardware",
             "entries": [
                 {
                     "name": "ivani",
@@ -38,6 +38,15 @@
                 }
             ]
         },
+        // "software": {
+        //     "title": "Software",
+        //     "entries": [
+        //         {
+        //             "name": "semibands",
+        //             "title": "Ideal Diode Simulator",
+        //         }
+        //     ]
+        // },
         "origami": {
             "title": "Origami",
             "entries": [
@@ -101,10 +110,10 @@
                     "desc": ""
                 },
                 {
-                    "name": "circuits",
-                    "title": "Circuits",
-                    "role": "Peer tutor",
-                    "date": "Spring 2016",
+                    "name": "olinjs",
+                    "title": "Olin.js",
+                    "role": "Course designer, instructor",
+                    "date": "Spring 2015",
                     "desc": ""
                 },
                 {
@@ -115,10 +124,10 @@
                     "desc": ""
                 },
                 {
-                    "name": "olinjs",
-                    "title": "Olin.js",
-                    "role": "Course designer, instructor",
-                    "date": "Spring 2015",
+                    "name": "circuits",
+                    "title": "Circuits",
+                    "role": "Peer tutor",
+                    "date": "Spring 2016",
                     "desc": ""
                 },
                 {
