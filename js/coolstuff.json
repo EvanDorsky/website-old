@@ -68,23 +68,23 @@
             "title": "Outdoors",
             "entries": [
                 {
-                    "name": "yowona",
-                    "title": "Wawona",
-                    "role": "Yosemite",
-                    "desc": "",
-                    "date": "Winter 2016",
-                },
-                {
                     "name": "yoclimb",
-                    "title": "Tuolumne Meadows",
-                    "role": "Yosemite",
+                    "title": "Climbing",
+                    "role": "Tuolumne Meadows",
                     "desc": "",
                     "date": "Summer 2016",
                 },
                 {
+                    "name": "ofac",
+                    "title": "Fire Arts",
+                    "role": "Club president, poi spinner",
+                    "date": "Fall 2012 - Present",
+                    "desc": ""
+                },
+                {
                     "name": "lospadres",
-                    "title": "Los Padres National Forest",
-                    "role": "Big Sur",
+                    "title": "Backpacking",
+                    "role": "Los Padres National Forest",
                     "desc": "",
                     "date": "Summer 2015",
                 }
@@ -160,18 +160,6 @@
                     "role": "Violinist, violist",
                     "date": "Fall 2008 - Spring 2012",
                     // "desc": "Pirates of Penzance, South Pacific, Bye Bye Birdie, Damn Yankees, The Wiz, Into the Woods, Once Upon a Mattress, You're a Good Man, Charlie Brown"
-                }
-            ]
-        },
-        "fire": {
-            "title": "Fire",
-            "entries": [
-                {
-                    "name": "ofac",
-                    "title": "Olin Fire Arts Club",
-                    "role": "President, Vice President, member",
-                    "date": "Fall 2012 - Spring 2016",
-                    "desc": ""
                 }
             ]
         }

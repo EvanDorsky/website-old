@@ -3,6 +3,7 @@
 })()
 
 var focusTime = 450 // ms
+var hideDetails
 
 function init() {
     $('.cat-img').click(handleImgClick)
@@ -46,8 +47,9 @@ function handleImgClick() {
     catTitlesAll.removeClass('active')
     catDetails.removeClass('active')
     catDetails.css({'height': 0})
-    // ***this makes things go away if you click too fast***
-    setTimeout(function() {
+    
+    clearTimeout(hideDetails)
+    hideDetails = setTimeout(function() {
         catDetails.hide()
     }, focusTime)
 
@@ -59,7 +61,7 @@ function handleImgClick() {
         $('html').velocity('scroll', {
             container: photoBox,
             axis: 'x',
-            duration: Math.abs(scrollOffset),
+            duration: 1.2*Math.abs(scrollOffset),
             offset: scrollOffset
         })
         colorImg.addClass('active')
