@@ -25,10 +25,10 @@
                 for (cat in data.categories) {
                     console.log(cat)
 
-                    var catPage = pug.compileFile('pug/layout.pug')
+                    var catPage = pug.compileFile('pug/cat.pug')
 
                     fs.writeFile(cat+'.html', catPage({
-                        poke: data.categories[cat]
+                        cat: data.categories[cat]
                     }), basicHandler)
                 }
             })

@@ -1,69 +1,45 @@
-doctype html
+extends layout.pug
 
-html(lang='en')
-    head
-        script
-            | (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            | (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            | m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            | })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-            | ga('create', 'UA-46752372-2', 'auto');
-            | ga('send', 'pageview');
-        meta(charset='utf-8')
-        meta(http-equiv='X-UA-Compatible', content='IE=edge')
-        meta(name='viewport', content='width=device-width, initial-scale=1')
-        title Evan Dorsky
+block content
+    .me
+        img.evan(src='img/viola-1-new.jpg')
+        .header
+            h1 Evan Dorsky
+            .email github/evandorsky
 
-        //- script(type='text/javascript').
-        //-     var categories = !{JSON.stringify(categories)}
+        .info
+            ul
+                li Olin College Electrical and Computer Engineering
+                li Apple Hardware System Integration Engineer
+                li San Francisco
+            //- ul.past
+            //-     li Course designer and teaching team member at Olin College
 
-        script(src='js/zepto.min.js')
-        script(src='js/velocity.min.js')
-        script(src='js/main.js')
-
-        link(href='css/style.css', rel='stylesheet')
-
-    body
-        .container
-            .me
-                img.evan(src='img/viola-1-new.jpg')
-                .header
-                    h1 Evan Dorsky
-                    .email github/evandorsky
-
-                .info
-                    ul
-                        li Olin College Electrical and Computer Engineering
-                        li Apple Hardware System Integration Engineer
-                        li San Francisco
-                    //- ul.past
-                    //-     li Course designer and teaching team member at Olin College
-
-            .portfolio
-                each cat, key in categories
-                    .cat(class=key)
-                        .photo-box
-                            each entry in cat.entries
-                                .cat-img(name=entry.name)
-                                    if key == "courses"
-                                        .whiteout
-                                        p #{entry.title}
-                                    else
-                                        .img-container
-                                            .whiteout
-                                            img.color(src='img/'+key+'/'+entry.name+'_tn.jpg')
-                                            img.gray(src='img/'+key+'/'+entry.name+'_tn_gray.jpg')
-                        .details-box
-                            each entry in cat.entries
-                                if key == "courses"
-                                    .cat-details(name=entry.name)
-                                        .role #{entry.role}
-                                        p #{entry.desc}
-                                        .date #{entry.date}
-                                else
-                                    .cat-details(name=entry.name)
-                                        h2 #{entry.title}
-                                        .role #{entry.role}
-                                        p #{entry.desc}
-                                        .date #{entry.date}
-                        .cat-title #{cat.title}
+    .portfolio
+        each cat, key in categories
+            .cat(class=key)
+                .photo-box
+                    each entry in cat.entries
+                        .cat-img(name=entry.name)
+                            if key == "courses"
+                                .whiteout
+                                p #{entry.title}
+                            else
+                                .img-container
+                                    .whiteout
+                                    img.color(src='img/'+key+'/'+entry.name+'_tn.jpg')
+                                    img.gray(src='img/'+key+'/'+entry.name+'_tn_gray.jpg')
+                .details-box
+                    each entry in cat.entries
+                        if key == "courses"
+                            .cat-details(name=entry.name)
+                                .role #{entry.role}
+                                p #{entry.desc}
+                                .date #{entry.date}
+                        else
+                            .cat-details(name=entry.name)
+                                h2 #{entry.title}
+                                .role #{entry.role}
+                                p #{entry.desc}
+                                .date #{entry.date}
+                a(href=key+'.html').cat-title #{cat.title}

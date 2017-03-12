@@ -1,5 +1,5 @@
 index.html: pug/index.pug js/coolstuff.json css/style.css
-	pug pug/index.pug -O js/coolstuff.json -o .
+	node build/build.js renderIndex
 	cp node_modules/zepto/dist/zepto.min.js js
 	cp node_modules/velocity-animate/velocity.min.js js
 
