@@ -8,11 +8,7 @@
                     "title": "Smart Outlet",
                     "role": "Electrical engineer, user-oriented designer",
                     "date": "Spring 2016",
-                    "desc": "I worked on a team of Olin students with Ivani, \
-                    an IoT startup. We explored new markets for their \
-                    low-power presence sensing technology, developed \
-                    a prototype of an outlet-based power monitor, and \
-                    filed a provisional patent."
+                    "desc": "I worked on a team of Olin students with Ivani, an IoT startup. We explored new markets for their low-power presence sensing technology, developed a prototype of an outlet-based power monitor, and filed a provisional patent."
                 },
                 {
                     "name": "spaceteam",
@@ -26,8 +22,7 @@
                     "title": "Inverted Pendulum",
                     "role": "Controls engineer, mechanical designer",
                     "date": "Spring 2015",
-                    "desc": "I worked with a partner to design a \
-                    rotary inverted pendulum."
+                    "desc": "I worked with a partner to design a rotary inverted pendulum."
                 },
                 {
                     "name": "tyga",
@@ -38,15 +33,6 @@
                 }
             ]
         },
-        // "software": {
-        //     "title": "Software",
-        //     "entries": [
-        //         {
-        //             "name": "semibands",
-        //             "title": "Ideal Diode Simulator",
-        //         }
-        //     ]
-        // },
         "origami": {
             "title": "Origami",
             "entries": [
@@ -81,7 +67,7 @@
                     "title": "Climbing",
                     "role": "Tuolumne Meadows",
                     "desc": "",
-                    "date": "Summer 2016",
+                    "date": "Summer 2016"
                 },
                 {
                     "name": "ofac",
@@ -95,7 +81,7 @@
                     "title": "Backpacking",
                     "role": "Los Padres National Forest",
                     "desc": "",
-                    "date": "Summer 2015",
+                    "date": "Summer 2015"
                 }
             ]
         },
@@ -168,7 +154,7 @@
                     "title": "Musical Pit Orchestra",
                     "role": "Violinist, violist",
                     "date": "Fall 2008 - Spring 2012",
-                    // "desc": "Pirates of Penzance, South Pacific, Bye Bye Birdie, Damn Yankees, The Wiz, Into the Woods, Once Upon a Mattress, You're a Good Man, Charlie Brown"
+                    "desc": ""
                 }
             ]
         }
