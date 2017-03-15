@@ -18,17 +18,7 @@ block content
     .portfolio
         each cat, key in categories
             .cat(class=key)
-                .photo-box
-                    each entry in cat.entries
-                        .cat-img(name=entry.name)
-                            if key == "courses"
-                                .whiteout
-                                p #{entry.title}
-                            else
-                                .img-container
-                                    .whiteout
-                                    img.color(src='img/'+key+'/'+entry.name+'_tn.jpg')
-                                    img.gray(src='img/'+key+'/'+entry.name+'_tn_gray.jpg')
+                +carousel(key, cat.entries, 'index')
                 .details-box
                     each entry in cat.entries
                         if key == "courses"

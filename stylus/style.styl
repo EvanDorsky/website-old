@@ -99,6 +99,16 @@ h1, h2, h3, h4, h5, h6
     
     border-radius 3px
 
+    &.full-page
+        display inline-flex
+        flex-flow row wrap
+        justify-content center
+        margin 0 auto
+        
+        & .cat-img
+            padding 0 1rem
+            margin-bottom 2rem
+
 .cat.courses
     .photo-box
         flex-flow row wrap
@@ -129,7 +139,7 @@ h1, h2, h3, h4, h5, h6
     transition opacity focus-time
         
     border-radius 3px
-    flex 0
+    flex 0 1 auto
      
     &:not(:last-child)
         padding-right 2rem

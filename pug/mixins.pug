@@ -1,0 +1,12 @@
+mixin carousel(category, entries, type)
+    .photo-box(class=type)
+        each entry in entries
+            .cat-img(name=entry.name)
+                if category == "courses"
+                    .whiteout
+                    p #{entry.title}
+                else
+                    .img-container
+                        .whiteout
+                        img.color(src='img/'+category+'/'+entry.name+'_tn.jpg')
+                        img.gray(src='img/'+category+'/'+entry.name+'_tn_gray.jpg')

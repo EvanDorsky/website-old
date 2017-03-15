@@ -23,11 +23,10 @@
                 data = JSON.parse(data)
 
                 for (cat in data.categories) {
-                    console.log(cat)
-
                     var catPage = pug.compileFile('pug/cat.pug')
 
                     fs.writeFile(cat+'.html', catPage({
+                        name: cat,
                         cat: data.categories[cat]
                     }), basicHandler)
                 }

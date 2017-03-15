@@ -7,6 +7,45 @@ var hideDetails
 
 function init() {
     $('.cat-img').click(handleImgClick)
+
+    setTimeout(lastChildMargin, 20)
+    window.onresize = lastChildMargin
+}
+
+function lastChildMargin() {
+    var lastCat = $('.cat-img:last-child')
+    var photoBox = $('.photo-box')
+
+    var photoWidth = photoBox.width()
+    var photoHeight = photoBox.height()
+
+    var photoRows = []
+    var row = 0
+    var lastOffset = 0
+    $('.cat-img').each(function() {
+        var offset = $(this).offset().left
+        if (offset <= lastOffset)
+            row++
+
+        if (row in photoRows)
+            photoRows[row].push($(this).width())
+        else
+            photoRows[row] = [$(this).width()]
+        lastOffset = offset
+    })
+
+    var lastWidth = photoRows.pop().reduce(function(a,b){return a+b})
+
+    console.log('lastWidth')
+    console.log(lastWidth)
+
+    correctMargin = photoWidth - lastWidth
+
+    console.log('correctMargin')
+    console.log(correctMargin)
+    // lastCat.css({
+    //     'margin-right': correctMargin/2
+    // })
 }
 
 function handleImgClick() {
@@ -18,15 +57,15 @@ function handleImgClick() {
     var catAll = $('.cat-details')
     var catDetails = $('.cat-details')
 
-    var wasHidden = !catDetail.hasClass('active')
+    var colorImg = $('.cat-img[name='+name+']').find('img.color')
+    var colorImgsAll = $('.cat-img').find('img.color')
+
+    var wasHidden = !colorImg.hasClass('active')
 
     if (wasHidden)
         catDetails = catDetails.filter(function(i) {
             return $(catDetails[i]).attr('name') != name
         })
-
-    var colorImg = $('.cat-img[name='+name+']').find('img.color')
-    var colorImgsAll = $('.cat-img').find('img.color')
 
     var catTitlesAll = $('.cat-title')
 
@@ -49,9 +88,7 @@ function handleImgClick() {
     catDetails.css({'height': 0})
     
     clearTimeout(hideDetails)
-    hideDetails = setTimeout(function() {
-        catDetails.hide()
-    }, focusTime)
+    hideDetails = setTimeout(catDetails.hide, focusTime)
 
     // only show if it wasn't showing -- and isn't a course
     if (wasHidden && !photoBox.parent().hasClass('courses')) {

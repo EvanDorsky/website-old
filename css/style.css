@@ -141,6 +141,16 @@ h6 {
   overflow-x: scroll;
   border-radius: 3px;
 }
+.photo-box.full-page {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+.photo-box.full-page .cat-img {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
 .cat.courses .photo-box {
   flex-flow: row wrap;
 }
@@ -162,7 +172,7 @@ h6 {
 .cat-img {
   transition: opacity 450ms;
   border-radius: 3px;
-  flex: 0;
+  flex: 0 1 auto;
 }
 .cat-img.fade {
   opacity: 0.7;
