@@ -94,6 +94,7 @@ h1, h2, h3, h4, h5, h6
 
     &.cat-page
         text-align center
+        vertical-align text-top
 
 a.cat-title:hover
     opacity .7
@@ -192,17 +193,22 @@ a.cat-title:hover
     &.opaque
         opacity 0.3
 
+back-height = 1.6rem
+top-off = 1.5rem + 1rem - back-height/2
+
 a.back-button
-    position fixed
-    top 1.5rem
+    position absolute
+    top top-off
     left 1.5rem
     
     width 2rem
-    height 1.5rem
+    height back-height
     
     border 2px solid black
     border-radius 3px
     z-index 1
+    
+    box-sizing border-box
 
     transition border-color focus-time
 
