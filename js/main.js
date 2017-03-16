@@ -106,7 +106,9 @@ function handleImgClick() {
     catDetails.css({'height': 0})
     
     clearTimeout(hideDetails)
-    hideDetails = setTimeout(catDetails.hide, focusTime)
+    hideDetails = setTimeout(function() {
+        catDetails.hide()
+    }, focusTime)
 
     // only show if it wasn't showing -- and isn't a course
     if (wasHidden && !photoBox.parent().hasClass('courses')) {
