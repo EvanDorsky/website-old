@@ -18,10 +18,8 @@ function add(x, y) {
 
 function lastChildMargin() {
     var lastCat = $('.cat-img:last-child')
-    var photoBox = $('.photo-box')
 
-    var photoWidth = photoBox.width()
-    var photoHeight = photoBox.height()
+    var photoWidth = $('.photo-box').width()
 
     var photoRows = []
     var row = 0
@@ -38,28 +36,32 @@ function lastChildMargin() {
         lastOffset = offset
     })
 
-    console.log('photoRowWidths')
-    console.log(photoRowWidths)
+    var lastRowCount = photoRows[row].length
+
     var maxRowWidth = Math.max.apply(null, photoRows.map(function(a) {
         return a.reduce(add)
     }))
 
-    console.log('maxRowWidth')
-    console.log(maxRowWidth)
-    var lastWidth = photoRows.pop().reduce(add)
+    var catFits = false
+    if (lastRowCount == 1 && row > 0) {
+        var secLastRowWidth = photoRows[row-1].reduce(add)
+        if (secLastRowWidth + photoRows[row][lastRowCount-1] > photoWidth)
+            catFits = false
+        else
+            catFits = true
+    }
 
-    console.log('Width of photo-box')
-    console.log(photoWidth)
-    console.log('Width of last row elements')
-    console.log(lastWidth)
+    if (!catFits) {
+        var lastWidth = photoRows.pop().reduce(add)
+        var margin = maxRowWidth - lastWidth
 
-    var margin = maxRowWidth - lastWidth
-
-    console.log('Margin')
-    console.log(margin)
-    lastCat.css({
-        'margin-right': margin
-    })
+        lastCat.css({
+            'margin-right': margin
+        })
+    } else
+        lastCat.css({
+            'margin-right': 0
+        })
 }
 
 function handleImgClick() {
