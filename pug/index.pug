@@ -1,35 +1,36 @@
 extends layout.pug
 
 block content
-    .me
-        img.evan(src='img/viola-1-new.jpg')
-        .header
-            h1 Evan Dorsky
-            .email github/evandorsky
+    .container
+        .me
+            img.evan(src='img/viola-1-new.jpg')
+            .header
+                h1 Evan Dorsky
+                .email github/evandorsky
 
-        .info
-            ul
-                li Olin College Electrical and Computer Engineering
-                li Apple Hardware System Integration Engineer
-                li San Francisco
-            //- ul.past
-            //-     li Course designer and teaching team member at Olin College
+            .info
+                ul
+                    li Olin College Electrical and Computer Engineering
+                    li Apple Hardware System Integration Engineer
+                    li San Francisco
+                //- ul.past
+                //-     li Course designer and teaching team member at Olin College
 
-    .portfolio
-        each cat, key in categories
-            .cat(class=key)
-                +carousel(key, cat.entries, 'index')
-                .details-box
-                    each entry in cat.entries
-                        if key == "courses"
-                            .cat-details(name=entry.name)
-                                .role #{entry.role}
-                                p #{entry.desc}
-                                .date #{entry.date}
-                        else
-                            .cat-details(name=entry.name)
-                                h2 #{entry.title}
-                                .role #{entry.role}
-                                p #{entry.desc}
-                                .date #{entry.date}
-                a(href=key+'.html').cat-title #{cat.title}
+        .portfolio
+            each cat, key in categories
+                .cat(class=key)
+                    +carousel(key, cat.entries, 'index')
+                    .details-box
+                        each entry in cat.entries
+                            if key == "courses"
+                                .cat-details(name=entry.name)
+                                    .role #{entry.role}
+                                    p #{entry.desc}
+                                    .date #{entry.date}
+                            else
+                                .cat-details(name=entry.name)
+                                    h2 #{entry.title}
+                                    .role #{entry.role}
+                                    p #{entry.desc}
+                                    .date #{entry.date}
+                    a(href=key+'.html').cat-title #{cat.title}

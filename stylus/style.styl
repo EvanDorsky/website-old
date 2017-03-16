@@ -30,12 +30,15 @@ h1, h2, h3, h4, h5, h6
     display flex
     flex-flow row wrap
     justify-content center
-    
     align-items center
+    
     padding 1.5rem
 
     max-width 900px
     margin 0 auto
+
+.container.cat-page
+    display block
 
 .me
     display flex
@@ -89,6 +92,9 @@ h1, h2, h3, h4, h5, h6
     &.active
         opacity .4
 
+    &.cat-page
+        text-align center
+
 a.cat-title:hover
     opacity .7
 
@@ -105,9 +111,9 @@ a.cat-title:hover
     border-radius 3px
 
     &.full-page
-        display inline-flex
         flex-flow row wrap
         justify-content center
+        
         margin 1.5rem auto
         
         & .cat-img
@@ -197,6 +203,11 @@ a.back-button
     border 2px solid black
     border-radius 3px
     z-index 1
+
+    transition border-color focus-time
+
+    &:hover
+        border-color rgba(0,0,0,.4)
         
 .cat-details
     display none
