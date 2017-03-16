@@ -8,12 +8,14 @@ var hideDetails
 function init() {
     $('.cat-img').click(handleImgClick)
 
-    setTimeout(lastChildMargin, 20)
-    window.onresize = lastChildMargin
+    if ($('.photo-box .full-page')) {
+        setTimeout(lastChildMargin, 20)
+        window.onresize = lastChildMargin
+    }
 }
 
 function add(x, y) {
-    return x + y
+    return x+y
 }
 
 function lastChildMargin() {
