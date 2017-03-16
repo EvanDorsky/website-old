@@ -1,6 +1,7 @@
 extends layout.pug
 
 block content
+    a(href='index.html').back-button
     .cat-title #{cat.title}
 
     +carousel(name, cat.entries, 'full-page')
