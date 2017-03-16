@@ -123,14 +123,14 @@ h6 {
 .portfolio {
   max-width: 100%;
 }
-a.cat-title {
+.cat-title {
   color: #000;
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 400;
   transition: opacity 450ms;
 }
-a.cat-title.active {
+.cat-title.active {
   opacity: 0.4;
 }
 a.cat-title:hover {
