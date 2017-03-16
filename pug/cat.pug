@@ -2,7 +2,7 @@ extends layout.pug
 
 block content
     .container.cat-page
-        a(href='index.html').back-button
+        a(href=dirRoot+'/index.html').back-button
         .cat-title.cat-page #{cat.title}
 
-        +carousel(name, cat.entries, 'full-page')
+        +carousel(name, cat.entries, 'full-page', dirRoot)

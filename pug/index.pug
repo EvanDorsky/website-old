@@ -19,7 +19,7 @@ block content
         .portfolio
             each cat, key in categories
                 .cat(class=key)
-                    +carousel(key, cat.entries, 'index')
+                    +carousel(key, cat.entries, 'index', dirRoot)
                     .details-box
                         each entry in cat.entries
                             if key == "courses"
@@ -33,4 +33,4 @@ block content
                                     .role #{entry.role}
                                     p #{entry.desc}
                                     .date #{entry.date}
-                    a(href=key+'.html').cat-title #{cat.title}
+                    a(href='categories/'+key+'.html').cat-title #{cat.title}

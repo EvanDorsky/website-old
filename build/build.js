@@ -12,20 +12,24 @@
         renderIndex: function() {
             fs.readFile('js/coolstuff.json', 'utf8', function(err, data) {
                 basicHandler(err, data)
+                data = JSON.parse(data)
+                data.dirRoot = '.'
 
                 var indexPage = pug.compileFile('pug/index.pug')
 
-                fs.writeFile('index.html', indexPage(JSON.parse(data)), basicHandler)
+                fs.writeFile('index.html', indexPage(data), basicHandler)
             })
         },
         renderCats: function() {
             fs.readFile('js/coolstuff.json', 'utf8', function(err, data) {
+                basicHandler(err, data)
                 data = JSON.parse(data)
 
                 for (cat in data.categories) {
                     var catPage = pug.compileFile('pug/cat.pug')
 
-                    fs.writeFile(cat+'.html', catPage({
+                    fs.writeFile('categories/'+cat+'.html', catPage({
+                        dirRoot: '..',
                         name: cat,
                         cat: data.categories[cat]
                     }), basicHandler)

@@ -1,4 +1,4 @@
-index.html: pug/*.pug js/coolstuff.json css/style.css
+index.html: pug/*.pug js/coolstuff.json css/style.css build/*.js
 	node build/build.js renderIndex
 	node build/build.js renderCats
 	cp node_modules/zepto/dist/zepto.min.js js
