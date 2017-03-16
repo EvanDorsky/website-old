@@ -12,6 +12,10 @@ function init() {
     window.onresize = lastChildMargin
 }
 
+function add(x, y) {
+    return x + y
+}
+
 function lastChildMargin() {
     var lastCat = $('.cat-img:last-child')
     var photoBox = $('.photo-box')
@@ -34,18 +38,28 @@ function lastChildMargin() {
         lastOffset = offset
     })
 
-    var lastWidth = photoRows.pop().reduce(function(a,b){return a+b})
+    console.log('photoRowWidths')
+    console.log(photoRowWidths)
+    var maxRowWidth = Math.max.apply(null, photoRows.map(function(a) {
+        return a.reduce(add)
+    }))
 
-    console.log('lastWidth')
+    console.log('maxRowWidth')
+    console.log(maxRowWidth)
+    var lastWidth = photoRows.pop().reduce(add)
+
+    console.log('Width of photo-box')
+    console.log(photoWidth)
+    console.log('Width of last row elements')
     console.log(lastWidth)
 
-    correctMargin = photoWidth - lastWidth
+    var margin = maxRowWidth - lastWidth
 
-    console.log('correctMargin')
-    console.log(correctMargin)
-    // lastCat.css({
-    //     'margin-right': correctMargin/2
-    // })
+    console.log('Margin')
+    console.log(margin)
+    lastCat.css({
+        'margin-right': margin
+    })
 }
 
 function handleImgClick() {
