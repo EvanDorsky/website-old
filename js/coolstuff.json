@@ -20,16 +20,16 @@
                 {
                     "name": "pendulum",
                     "title": "Inverted Pendulum",
-                    "role": "Controls engineer, mechanical designer",
+                    "role": "Controls engineer, mechanical designer, embedded developer",
                     "date": "Spring 2015",
-                    "desc": "I worked with a partner to design a rotary inverted pendulum."
+                    "desc": "I worked with a partner to design a rotary inverted pendulum. We built the physical system, characterized it to inform a model, and used the model to design a digital feedback control system to keep the pendulum inverted."
                 },
                 {
                     "name": "tyga",
                     "title": "Stereo Audio Amplifier",
                     "role": "Integrated circuit designer, layout engineer",
                     "date": "Spring 2015",
-                    "desc": ""
+                    "desc": "I worked on a team to design an integrated audio amplifier with digital gain control. We specified the layout down to the shape, size, and positioning of each transistor across all the silicon and metal layers. After duplicating the circuit to make our amplifier \"stereo\", there was still more than enough room left on the 1mm-square die for our faces."
                 }
             ]
         },
