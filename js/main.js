@@ -6,9 +6,11 @@ var focusTime = 450 // ms
 var hideDetails
 
 function init() {
+    var loc = window.location.href.split('/')
+
     $('.cat-img').click(handleImgClick)
 
-    if ($('.photo-box .full-page')) {
+    if (loc.includes('categories')) {
         setTimeout(lastChildMargin, 20)
         window.onresize = lastChildMargin
     }
@@ -64,6 +66,25 @@ function lastChildMargin() {
         lastCat.css({
             'margin-right': 0
         })
+}
+
+function handleDetailDisplay(detail) {
+    // this breaks courses
+    detail.insertBefore($(detail).parent().find('div:first-child'))
+
+    detail.show()
+    detail.css({'height': 'auto'})
+    catHeight = detail.height()
+    detail.css({
+        'height': 0,
+        'transition': 'padding '+focusTime+'ms, opacity '+focusTime+'ms, height '+focusTime+'ms'
+    })
+    setTimeout(function() {
+        detail.addClass('active')
+        detail.css({
+            'height': catHeight + 16
+        })
+    }, 5)
 }
 
 function handleImgClick() {
@@ -123,21 +144,6 @@ function handleImgClick() {
         })
         colorImg.addClass('active')
 
-        // this breaks courses
-        catDetail.insertBefore($(catDetail).parent().find('div:first-child'))
-
-        catDetail.show()
-        catDetail.css({'height': 'auto'})
-        catHeight = catDetail.height()
-        catDetail.css({
-            'height': 0,
-            'transition': 'padding '+focusTime+'ms, opacity '+focusTime+'ms, height '+focusTime+'ms'
-        })
-        setTimeout(function() {
-            catDetail.addClass('active')
-            catDetail.css({
-                'height': catHeight + 16
-            })
-        }, 5)
+        handleDetailDisplay(catDetail)
     }
 }

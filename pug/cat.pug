@@ -5,4 +5,8 @@ block content
         a(href=dirRoot+'/index.html').back-button
         .cat-title.cat-page #{cat.title}
 
-        +carousel(name, cat.entries, 'full-page', dirRoot)
+        .content-container
+            +carousel(name, cat.entries, 'full-page', dirRoot)
+
+            .cat-details
+                | heyheyheyheyehyehe
