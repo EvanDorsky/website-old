@@ -1,5 +1,6 @@
 import sys, os
 from subprocess import call
+from multiprocessing.pool import ThreadPool as Pool
 
 def thumb(path, height):
     dirname = os.path.dirname(path)
@@ -21,18 +22,16 @@ def gray(path):
             filename.split('.')[0]+'_gray.jpg')
         ])
 
-def process(path):
-    path_tn = thumb(path, 500)
-    gray(path)
-    gray(path_tn)
+def process(dirname, filename):
+    if '.jpg' in filename:
+        path = os.path.join(dirname, filename)
+        path_tn = thumb(path, 500)
+        p.map(gray, [path, path_tn])
 
 def process_files():
     for dirname, dirnames, filenames in os.walk('img'):
-        for filename in filenames:
-            if '.jpg' in filename:
-                path = os.path.join(dirname, filename)
-                process(path)
+        p.map(lambda filename: process(dirname, filename), filenames)
 
-### main
-
-process_files()
+if __name__ == '__main__':
+    p = Pool(32)
+    process_files()
