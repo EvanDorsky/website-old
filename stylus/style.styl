@@ -12,6 +12,17 @@ focus-time = 450ms
     padding 0
     margin 0
 
+a
+    color inherit
+    text-decoration None
+    transition opacity focus-time
+
+    &:hover
+        opacity 0.6
+    
+    &:active
+        opacity 0.2
+
 body
     background-color bg-color
     font-family San Francisco
@@ -56,14 +67,20 @@ h1, h2, h3, h4, h5, h6
     h1
         margin-bottom .5rem
 
-    .email
-        font-size .9rem
-        font-weight 200
-        text-align center
+    .sites
+        display flex
+        justify-content space-evenly
+        .site
+            flex 0 auto
+            font-size .9rem
+            font-weight 200
+            text-align center
 
-        em
-            font-style normal
-            font-size .5rem
+            em
+                font-style normal
+                font-size .5rem
+
+            margin-bottom 0.2rem
 
     img.evan
         height 6rem
@@ -95,9 +112,6 @@ h1, h2, h3, h4, h5, h6
     &.cat-page
         text-align center
         vertical-align text-top
-
-a.cat-title:hover
-    opacity .7
 
 .cat
     padding .8rem 1.5rem .5rem 1.5rem

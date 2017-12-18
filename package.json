@@ -1,7 +1,8 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Evan Dorsky's personal portfolio site",
+  "repository": "git@github.com:EvanDorsky/evandorsky.github.io.git",
   "author": "Evan Dorsky",
   "license": "ISC",
   "dependencies": {
