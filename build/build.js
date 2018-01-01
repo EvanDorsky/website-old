@@ -1,39 +1,58 @@
 #!/usr/bin/env node
 
-(function() {
+(() => {
     const pug = require('pug'),
     fs = require('fs')
 
-    var basicHandler = function(err, data) {
+    var basicHandler = (err, data) => {
         if (err) console.error(err)
     }
 
+    var processJson = (data, callback) => {
+        data = JSON.parse(data)
+        data.dirRoot = '.'
+
+        fs.readdir('img/film', (err, files) => {
+            data.categories.film.entries = files
+                .filter(file => !file.includes('_'))
+                .map(function(file) {
+                    return {name: file.split('.')[0]}
+                })
+
+            callback(data)
+        })
+    }
+
     module.exports = {
-        renderIndex: function() {
-            fs.readFile('js/coolstuff.json', 'utf8', function(err, data) {
+        renderIndex: () => {
+            fs.readFile('js/coolstuff.json', 'utf8', (err, data) => {
                 basicHandler(err, data)
-                data = JSON.parse(data)
-                data.dirRoot = '.'
 
-                var indexPage = pug.compileFile('pug/index.pug')
+                processJson(data, (processed) => {
+                    var indexPage = pug.compileFile('pug/index.pug')
 
-                fs.writeFile('index.html', indexPage(data), basicHandler)
+                    fs.writeFile('index.html', indexPage(processed), basicHandler)
+                })
             })
         },
-        renderCats: function() {
-            fs.readFile('js/coolstuff.json', 'utf8', function(err, data) {
+        renderCats: () => {
+            fs.readFile('js/coolstuff.json', 'utf8', (err, data) => {
                 basicHandler(err, data)
-                data = JSON.parse(data)
 
-                for (cat in data.categories) {
-                    var catPage = pug.compileFile('pug/cat.pug')
+                processJson(data, (processed) => {
+                    for (cat in processed.categories) {
+                        console.log('cat')
+                        console.log(cat)
+                        var catPage = pug.compileFile('pug/cat.pug')
 
-                    fs.writeFile('categories/'+cat+'.html', catPage({
-                        dirRoot: '..',
-                        name: cat,
-                        cat: data.categories[cat]
-                    }), basicHandler)
-                }
+                        fs.writeFile('categories/'+cat+'.html', catPage({
+                            dirRoot: '..',
+                            name: cat,
+                            cat: processed.categories[cat]
+                        }), basicHandler)
+                    }
+                })
+
             })
         }
     }
