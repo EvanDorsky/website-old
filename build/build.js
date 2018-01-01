@@ -41,7 +41,7 @@
     if (!module.parent) {
         var func = process.argv[2]
         if (func in module.exports)
-            module.exports[process.argv[2]]()
+            module.exports[func]()
         else
             console.error('Invalid call')
     }
