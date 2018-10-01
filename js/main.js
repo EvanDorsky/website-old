@@ -26,6 +26,7 @@ function lastChildMargin() {
     var photoWidth = $('.photo-box').width()
 
     var photoRows = []
+    var photosByRow = []
     var row = 0
     var lastOffset = 0
     $('.cat-img').each(function() {
@@ -33,18 +34,44 @@ function lastChildMargin() {
         if (offset <= lastOffset)
             row++
 
-        if (row in photoRows)
+        if (row in photoRows) {
             photoRows[row].push($(this).width())
-        else
+            photosByRow[row].push($(this))
+        }
+        else {
             photoRows[row] = [$(this).width()]
+            photosByRow[row] = [$(this)]
+        }
         lastOffset = offset
     })
-
     var lastRowCount = photoRows[row].length
 
-    var maxRowWidth = Math.max.apply(null, photoRows.map(function(a) {
+    var rowWidths = photoRows.map(function(a) {
         return a.reduce(add)
-    }))
+    })
+    var maxRowWidth = Math.max.apply(null, rowWidths)
+    var maxRow = rowWidths.indexOf(maxRowWidth)
+
+    var maxImg = photosByRow[maxRow][0]
+
+    // height correction for non-max-width rows
+
+    for (var i = photosByRow.length - 1; i >= 0; i--) {
+        var row = photosByRow[i]
+        var rowWidth = rowWidths[i]
+
+        row.forEach(function(photo) {
+            var container = $($(photo).children()[0])
+            var newHeight = maxRowWidth/rowWidth*$($(maxImg).children()[0]).height()
+            container.css({'height': newHeight+'px !important'})
+        })
+    }
+
+    var rowRatios = rowWidths.map(function(w) {
+        return w/maxRowWidth
+    })
+
+    // margin for last row
 
     var catFits = false
     if (lastRowCount == 1 && row > 0) {
