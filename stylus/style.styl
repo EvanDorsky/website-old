@@ -8,273 +8,276 @@ text-color = black
 
 focus-time = 450ms
 
+:root
+  color-scheme light dark
+
 *
-    padding 0
-    margin 0
+  padding 0
+  margin 0
 
 a
-    color inherit
-    text-decoration None
-    transition opacity focus-time
+  color inherit
+  text-decoration None
+  transition opacity focus-time
 
-    &:hover
-        opacity 0.6
-    
-    &:active
-        opacity 0.2
+  &:hover
+    opacity 0.6
+  
+  &:active
+    opacity 0.2
 
 body
-    background-color bg-color
-    font-family San Francisco
-    font-size 1em
-    color text-color
-    margin 0 auto
-    
+  background-color bg-color
+  font-family San Francisco
+  font-size 1em
+  color text-color
+  margin 0 auto
+  
 li
-    list-style-type none
-    
+  list-style-type none
+  
 h1, h2, h3, h4, h5, h6
-    font-weight 300
-    
+  font-weight 300
+  
 //page
 .container
-    display flex
-    flex-flow row wrap
-    justify-content center
-    align-items center
-    
-    padding 1.5rem
+  display flex
+  flex-flow row wrap
+  justify-content center
+  align-items center
+  
+  padding 1.5rem
 
-    max-width 900px
-    margin 0 auto
+  max-width 900px
+  margin 0 auto
 
 .container.cat-page
-    display block
+  display block
 
 .me
+  display flex
+  flex 1 100%
+  flex-flow row wrap
+  
+  justify-content center
+  align-items center
+
+  padding-bottom 1rem
+
+  .header
+    margin 1rem 2rem
+  
+  h1
+    margin-bottom .5rem
+
+  .sites
     display flex
-    flex 1 100%
-    flex-flow row wrap
-    
-    justify-content center
-    align-items center
+    justify-content space-evenly
+    .site
+      flex 0 auto
+      font-size .9rem
+      font-weight 200
+      text-align center
 
-    padding-bottom 1rem
+      em
+        font-style normal
+        font-size .5rem
 
-    .header
-        margin 1rem 2rem
-    
-    h1
-        margin-bottom .5rem
+      margin-bottom 0.2rem
 
-    .sites
-        display flex
-        justify-content space-evenly
-        .site
-            flex 0 auto
-            font-size .9rem
-            font-weight 200
-            text-align center
+  img.evan
+    height 6rem
+    border-radius 50%
+  
+  .info
+    margin 1rem 0
 
-            em
-                font-style normal
-                font-size .5rem
+  ul li
+    line-height 1.35
 
-            margin-bottom 0.2rem
-
-    img.evan
-        height 6rem
-        border-radius 50%
-    
-    .info
-        margin 1rem 0
-
-    ul li
-        line-height 1.35
-
-    ul.past
-        opacity .5
+  ul.past
+    opacity .5
 
 .portfolio
-    max-width 100%
+  max-width 100%
 
 .cat-title
-    color black
-    text-decoration none
-    font-size 1.6rem
-    font-weight 400
+  color black
+  text-decoration none
+  font-size 1.6rem
+  font-weight 400
 
-    transition opacity focus-time
+  transition opacity focus-time
 
-    &.active
-        opacity .4
+  &.active
+    opacity .4
 
-    &.cat-page
-        text-align center
-        vertical-align text-top
+  &.cat-page
+    text-align center
+    vertical-align text-top
 
 .cat
-    padding .8rem 1.5rem 1.5rem 1.5rem
+  padding .8rem 1.5rem 1.5rem 1.5rem
 
 .photo-box
-    margin-bottom .3rem
-    display flex
-    
-    overflow-y hidden
-    overflow-x scroll
-    
-    border-radius 3px
+  margin-bottom .3rem
+  display flex
+  
+  overflow-y hidden
+  overflow-x scroll
+  
+  border-radius 3px
 
-    &.full-page
-        flex-flow row wrap
-        justify-content center
-        
-        margin 1.5rem auto
-        
-        & .cat-img
-            padding 0 1rem
-            margin-bottom 2rem
+  &.full-page
+    flex-flow row wrap
+    justify-content center
+    
+    margin 1.5rem auto
+    
+    & .cat-img
+      padding 0 1rem
+      margin-bottom 2rem
 
 .content-container
-    display flex
+  display flex
 
 .cat.courses
-    .photo-box
-        flex-flow row wrap
-    .cat-img
-        position relative
-        
-        flex 0 0 auto
-        text-align center
-        
-        font-weight 200
-        font-size 1.4rem
+  .photo-box
+    flex-flow row wrap
+  .cat-img
+    position relative
+    
+    flex 0 0 auto
+    text-align center
+    
+    font-weight 200
+    font-size 1.4rem
 
-        padding .75rem
-        margin .5rem 1rem
+    padding .75rem
+    margin .5rem 1rem
 
-        color white
-        background-color #000
-        
-        height auto
+    color white
+    background-color #000
+    
+    height auto
 
-    .whiteout
-        margin -.75rem
+  .whiteout
+    margin -.75rem
 
 .cat-img
-    &.fade
-        opacity 0.7
+  &.fade
+    opacity 0.7
 
-    transition opacity focus-time
-        
-    border-radius 3px
-    flex 0 1 auto
-     
-    &:not(:last-child)
-        padding-right 2rem
+  transition opacity focus-time
+    
+  border-radius 3px
+  flex 0 1 auto
+   
+  &:not(:last-child)
+    padding-right 2rem
 
 .img-container
-    overflow hidden
-    border-radius 3px
-    height 10rem
-    
-    position relative
+  overflow hidden
+  border-radius 3px
+  height 10rem
+  
+  position relative
 
-    img
-        height 100%
-
-        transition opacity focus-time
-        &.color
-            border-radius 3px
-            position absolute
-            top 0
-            left 0
-            opacity 0
-
-            &.active
-                opacity 1 !important
-                
-    &:hover
-        img.color
-            opacity 0.7
-
-.whiteout
-    position absolute
-    background-color white
-    width 100%
+  img
     height 100%
-    opacity 0
 
     transition opacity focus-time
+    &.color
+      border-radius 3px
+      position absolute
+      top 0
+      left 0
+      opacity 0
 
-    &.opaque
-        opacity 0.3
+      &.active
+        opacity 1 !important
+        
+  &:hover
+    img.color
+      opacity 0.7
+
+.whiteout
+  position absolute
+  background-color white
+  width 100%
+  height 100%
+  opacity 0
+
+  transition opacity focus-time
+
+  &.opaque
+    opacity 0.3
 
 back-height = 1.6rem
 top-off = 1.5rem + 1rem - back-height/2
 
 a.back-button
-    position absolute
-    top top-off
-    left 1.5rem
-    
-    width 2rem
-    height back-height
-    
-    border 2px solid black
-    border-radius 3px
-    z-index 1
-    
-    box-sizing border-box
+  position absolute
+  top top-off
+  left 1.5rem
+  
+  width 2rem
+  height back-height
+  
+  border 2px solid black
+  border-radius 3px
+  z-index 1
+  
+  box-sizing border-box
 
-    transition border-color focus-time
+  transition border-color focus-time
 
-    &:hover
-        border-color rgba(0,0,0,.4)
-        
+  &:hover
+    border-color rgba(0,0,0,.4)
+    
 .cat-details
-    display none
-    height 0
-    opacity 0
-    overflow hidden
+  display none
+  height 0
+  opacity 0
+  overflow hidden
 
+  padding 0 1rem
+
+  max-width 600px
+  margin 0 auto
+
+  transition padding focus-time,
+    opacity focus-time
+  
+  h2
+    transition padding focus-time
+
+  .role
+    text-transform uppercase
+    font-size .75rem
+    font-weight 600
+
+  .date
+    font-size .85rem
+    text-transform uppercase
+    text-align center
+    padding .5rem
+    opacity 0.6
+    font-weight 200
+    font-style italic
+  
+  p
     padding 0 1rem
+    padding-top -8px
+    transition padding-top focus-time
+    padding 0
 
-    max-width 600px
-    margin 0 auto
-
-    transition padding focus-time,
-        opacity focus-time
-    
-    h2
-        transition padding focus-time
-
-    .role
-        text-transform uppercase
-        font-size .75rem
-        font-weight 600
-
-    .date
-        font-size .85rem
-        text-transform uppercase
-        text-align center
-        padding .5rem
-        opacity 0.6
-        font-weight 200
-        font-style italic
+  &.active
+    opacity 1
+    padding-bottom 16px
     
     p
-        padding 0 1rem
-        padding-top -8px
-        transition padding-top focus-time
-        padding 0
+      padding-top 8px
 
-    &.active
-        opacity 1
-        padding-bottom 16px
-        
-        p
-            padding-top 8px
-
-        h2
-            padding-top 8px
+    h2
+      padding-top 8px
