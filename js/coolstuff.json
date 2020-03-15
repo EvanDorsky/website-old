@@ -1,140 +1,140 @@
 {
-    "categories": {
-        "projects": {
-            "title": "Hardware",
-            "entries": [
-                {
-                    "name": "ivani",
-                    "title": "Smart Outlet",
-                    "role": "Electrical engineer, user-oriented designer",
-                    "date": "Spring 2016",
-                    "desc": "I worked on a team of Olin students with Ivani, an IoT startup. We explored new markets for their low-power presence sensing technology, developed a prototype of an outlet-based power monitor, and filed a provisional patent."
-                },
-                {
-                    "name": "spaceteam",
-                    "title": "Spaceteam Penny Arcade",
-                    "role": "System integrator, embedded developer",
-                    "date": "Spring 2016",
-                    "desc": "I worked on a team to build an arcade cabinet based on the cooperative smartphone game Spaceteam. Each player receives commands at their console, which has a suite of buttons, switches, and sliders. Many commands received at one console can only be completed at another. Players must communicate these commands to each other (often by shouting) to pilot their spaceship for as long as they can."
-                },
-                {
-                    "name": "pendulum",
-                    "title": "Inverted Pendulum",
-                    "role": "Controls engineer, mechanical designer, embedded developer",
-                    "date": "Spring 2015",
-                    "desc": "I worked with a partner to design a rotary inverted pendulum. We built the physical system, characterized it to inform a model, and used the model to design a digital feedback control system to keep the pendulum inverted."
-                },
-                {
-                    "name": "tyga",
-                    "title": "Stereo Audio Amplifier",
-                    "role": "Integrated circuit designer, layout engineer",
-                    "date": "Spring 2015",
-                    "desc": "I worked on a team to design an integrated audio amplifier with digital gain control. We specified the layout down to the shape, size, and positioning of each transistor across all the silicon and metal layers. After duplicating the circuit to make our amplifier \"stereo\", there was still more than enough room left on the 1mm-square die for our faces."
-                }
-            ]
+  "categories": {
+    "projects": {
+      "title": "Hardware",
+      "entries": [
+        {
+          "name": "ivani",
+          "title": "Smart Outlet",
+          "role": "Electrical engineer, user-oriented designer",
+          "date": "Spring 2016",
+          "desc": "I worked on a team of Olin students with Ivani, an IoT startup. We explored new markets for their low-power presence sensing technology, developed a prototype of an outlet-based power monitor, and filed a provisional patent."
         },
-        "film": {
-            "title": "Film",
-            "entries": []
+        {
+          "name": "spaceteam",
+          "title": "Spaceteam Penny Arcade",
+          "role": "System integrator, embedded developer",
+          "date": "Spring 2016",
+          "desc": "I worked on a team to build an arcade cabinet based on the cooperative smartphone game Spaceteam. Each player receives commands at their console, which has a suite of buttons, switches, and sliders. Many commands received at one console can only be completed at another. Players must communicate these commands to each other (often by shouting) to pilot their spaceship for as long as they can."
         },
-        "courses": {
-            "title": "Courses",
-            "entries": [
-                {
-                    "name": "practicalee",
-                    "title": "Practical EE",
-                    "role": "Course designer, instructor",
-                    "date": "Spring 2016",
-                    "desc": ""
-                },
-                {
-                    "name": "olinjs",
-                    "title": "Olin.js",
-                    "role": "Course designer, instructor",
-                    "date": "Spring 2015",
-                    "desc": ""
-                },
-                {
-                    "name": "controls",
-                    "title": "Controls",
-                    "role": "Course assistant",
-                    "date": "Fall 2016",
-                    "desc": ""
-                },
-                {
-                    "name": "circuits",
-                    "title": "Circuits",
-                    "role": "Peer tutor",
-                    "date": "Spring 2016",
-                    "desc": ""
-                },
-                {
-                    "name": "poe",
-                    "title": "Principles of Engineering",
-                    "role": "Course assistant",
-                    "date": "Fall 2015",
-                    "desc": ""
-                },
-                {
-                    "name": "circuits-intro",
-                    "title": "Intro EE Courses",
-                    "role": "Course assistant",
-                    "date": "Fall 2013 - Fall 2016",
-                    "desc": ""
-                }
-            ]
+        {
+          "name": "pendulum",
+          "title": "Inverted Pendulum",
+          "role": "Controls engineer, mechanical designer, embedded developer",
+          "date": "Spring 2015",
+          "desc": "I worked with a partner to design a rotary inverted pendulum. We built the physical system, characterized it to inform a model, and used the model to design a digital feedback control system to keep the pendulum inverted."
         },
-        "music": {
-            "title": "Music",
-            "entries": [
-                {
-                    "name": "olin-chamber",
-                    "title": "Olin Chamber Ensemble",
-                    "role": "Founding member, violinist, violist",
-                    "date": "Spring 2014 - Spring 2016",
-                    "desc": ""
-                },
-                {
-                    "name": "oco",
-                    "title": "Olin Conductorless Orchestra",
-                    "role": "Navigator, violinist, violist",
-                    "date": "Fall 2012 - Spring 2016",
-                    "desc": ""
-                },
-                {
-                    "name": "pit",
-                    "title": "Musical Pit Orchestra",
-                    "role": "Violinist, violist",
-                    "date": "Fall 2008 - Spring 2012",
-                    "desc": ""
-                }
-            ]
-        },
-        "origami": {
-            "title": "Origami",
-            "entries": [
-                {
-                    "name": "squirrel",
-                    "title": "Squirrel",
-                    "role": "Michael G. LaFosse",
-                    "date": "Winter 2016",
-                    "desc": ""
-                },
-                {
-                    "name": "koi",
-                    "title": "Dollar Koi Fish",
-                    "role": "Won Park",
-                    "date": "Winter 2016",
-                    "desc": ""
-                },
-                {
-                    "name": "rose",
-                    "title": "New Kawasaki Rose",
-                    "role": "Toshikazu Kawasaki",
-                    "date": "",
-                    "desc": ""
-                }
-            ]
+        {
+          "name": "tyga",
+          "title": "Stereo Audio Amplifier",
+          "role": "Integrated circuit designer, layout engineer",
+          "date": "Spring 2015",
+          "desc": "I worked on a team to design an integrated audio amplifier with digital gain control. We specified the layout down to the shape, size, and positioning of each transistor across all the silicon and metal layers. After duplicating the circuit to make our amplifier \"stereo\", there was still more than enough room left on the 1mm-square die for our faces."
         }
+      ]
+    },
+    "film": {
+      "title": "Film",
+      "entries": []
+    },
+    "courses": {
+      "title": "Courses",
+      "entries": [
+        {
+          "name": "practicalee",
+          "title": "Practical EE",
+          "role": "Course designer, instructor",
+          "date": "Spring 2016",
+          "desc": ""
+        },
+        {
+          "name": "olinjs",
+          "title": "Olin.js",
+          "role": "Course designer, instructor",
+          "date": "Spring 2015",
+          "desc": ""
+        },
+        {
+          "name": "controls",
+          "title": "Controls",
+          "role": "Course assistant",
+          "date": "Fall 2016",
+          "desc": ""
+        },
+        {
+          "name": "circuits",
+          "title": "Circuits",
+          "role": "Peer tutor",
+          "date": "Spring 2016",
+          "desc": ""
+        },
+        {
+          "name": "poe",
+          "title": "Principles of Engineering",
+          "role": "Course assistant",
+          "date": "Fall 2015",
+          "desc": ""
+        },
+        {
+          "name": "circuits-intro",
+          "title": "Intro EE Courses",
+          "role": "Course assistant",
+          "date": "Fall 2013 - Fall 2016",
+          "desc": ""
+        }
+      ]
+    },
+    "music": {
+      "title": "Music",
+      "entries": [
+        {
+          "name": "olin-chamber",
+          "title": "Olin Chamber Ensemble",
+          "role": "Founding member, violinist, violist",
+          "date": "Spring 2014 - Spring 2016",
+          "desc": ""
+        },
+        {
+          "name": "oco",
+          "title": "Olin Conductorless Orchestra",
+          "role": "Navigator, violinist, violist",
+          "date": "Fall 2012 - Spring 2016",
+          "desc": ""
+        },
+        {
+          "name": "pit",
+          "title": "Musical Pit Orchestra",
+          "role": "Violinist, violist",
+          "date": "Fall 2008 - Spring 2012",
+          "desc": ""
+        }
+      ]
+    },
+    "origami": {
+      "title": "Origami",
+      "entries": [
+        {
+          "name": "squirrel",
+          "title": "Squirrel",
+          "role": "Michael G. LaFosse",
+          "date": "Winter 2016",
+          "desc": ""
+        },
+        {
+          "name": "koi",
+          "title": "Dollar Koi Fish",
+          "role": "Won Park",
+          "date": "Winter 2016",
+          "desc": ""
+        },
+        {
+          "name": "rose",
+          "title": "New Kawasaki Rose",
+          "role": "Toshikazu Kawasaki",
+          "date": "",
+          "desc": ""
+        }
+      ]
     }
+  }
 }
