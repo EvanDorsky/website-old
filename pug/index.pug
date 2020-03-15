@@ -1,43 +1,43 @@
 extends layout.pug
 
 block content
-    .container
-        .me
-            img.evan(src='img/yosemite_tn_gray.jpg')
-            .header
-                h1 Evan Dorsky
-                .sites
-                    a.site(href="https://www.github.com/evandorsky")
-                            | github
-                    a.site(href="https://www.flickr.com/evandorsky")
-                        | flickr
+  .container
+    .me
+      img.evan(src='img/yosemite_tn_gray.jpg')
+      .header
+        h1 Evan Dorsky
+        .sites
+          a.site(href="https://www.github.com/evandorsky")
+              | github
+          a.site(href="https://www.flickr.com/evandorsky")
+            | flickr
 
-            .info
-                ul
-                    li System Software at 
-                      a(href="https://www.perceptivesensing.ai") Perceptive Sensing
-                    li
-                      a(href="https://www.olin.edu") Olin College 
-                      | Electrical and Computer Engineering
-                    li San Francisco
-                //- ul.past
-                //-     li Course designer and teaching team member at Olin College
+      .info
+        ul
+          li System Software at 
+            a(href="https://www.perceptivesensing.ai") Perceptive Sensing
+          li
+            a(href="https://www.olin.edu") Olin College 
+            | Electrical and Computer Engineering
+          li San Francisco
+        //- ul.past
+        //-     li Course designer and teaching team member at Olin College
 
-        .portfolio
-            each cat, key in categories
-                .cat(class=key)
-                    +carousel(key, cat.entries, 'index', dirRoot)
-                    .details-box
-                        each entry in cat.entries
-                            if key == "courses"
-                                .cat-details(name=entry.name)
-                                    .role #{entry.role}
-                                    p #{entry.desc}
-                                    .date #{entry.date}
-                            else
-                                .cat-details(name=entry.name)
-                                    h2 #{entry.title}
-                                    .role #{entry.role}
-                                    p #{entry.desc}
-                                    .date #{entry.date}
-                    a(href='categories/'+key+'.html').cat-title #{cat.title}
+    .portfolio
+      each cat, key in categories
+        .cat(class=key)
+          +carousel(key, cat.entries, 'index', dirRoot)
+          .details-box
+            each entry in cat.entries
+              if key == "courses"
+                .cat-details(name=entry.name)
+                  .role #{entry.role}
+                  p #{entry.desc}
+                  .date #{entry.date}
+              else
+                .cat-details(name=entry.name)
+                  h2 #{entry.title}
+                  .role #{entry.role}
+                  p #{entry.desc}
+                  .date #{entry.date}
+          a(href='categories/'+key+'.html').cat-title #{cat.title}
