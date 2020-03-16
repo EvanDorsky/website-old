@@ -1,35 +1,74 @@
 {
+  "buffer": {
+    "projects": {
+      "entries": [
+        {
+          "name": "shelf",
+          "title": "Sliding Bedside Shelf",
+          "subtitle": "Mechanical design, woodworking",
+          "date": "Winter 2018",
+          "desc": ""
+        }
+      ]
+    },
+    "work": {
+      "title": "Work",
+      "entries": [
+        {
+          "name": "apple",
+          "title": "Apple",
+          "subtitle": "Hardware System Integration",
+          "date": "July 2016 - July 2019",
+          "desc": ""
+        },
+        {
+          "name": "fastcap",
+          "title": "FastCAP",
+          "subtitle": "Electrical Engineering Intern",
+          "date": "Summer 2014",
+          "desc": ""
+        },
+        {
+          "name": "playposit",
+          "title": "playposit",
+          "subtitle": "Software Lead Intern",
+          "date": "Summer 2013",
+          "desc": ""
+        }
+      ]
+    }
+  },
   "categories": {
     "projects": {
-      "title": "Hardware",
+      "title": "Projects",
       "entries": [
         {
           "name": "ivani",
           "title": "Smart Outlet",
-          "role": "Electrical engineer, user-oriented designer",
+          "subtitle": "Product design, electrical engineering",
           "date": "Spring 2016",
           "desc": "I worked on a team of Olin students with Ivani, an IoT startup. We explored new markets for their low-power presence sensing technology, developed a prototype of an outlet-based power monitor, and filed a provisional patent."
         },
         {
           "name": "spaceteam",
           "title": "Spaceteam Penny Arcade",
-          "role": "System integrator, embedded developer",
+          "subtitle": "System integration, embedded software",
           "date": "Spring 2016",
           "desc": "I worked on a team to build an arcade cabinet based on the cooperative smartphone game Spaceteam. Each player receives commands at their console, which has a suite of buttons, switches, and sliders. Many commands received at one console can only be completed at another. Players must communicate these commands to each other (often by shouting) to pilot their spaceship for as long as they can."
         },
         {
           "name": "pendulum",
           "title": "Inverted Pendulum",
-          "role": "Controls engineer, mechanical designer, embedded developer",
+          "subtitle": "Control theory, mechanical design, embedded software",
           "date": "Spring 2015",
           "desc": "I worked with a partner to design a rotary inverted pendulum. We built the physical system, characterized it to inform a model, and used the model to design a digital feedback control system to keep the pendulum inverted."
         },
         {
           "name": "tyga",
           "title": "Stereo Audio Amplifier",
-          "role": "Integrated circuit designer, layout engineer",
+          "subtitle": "Integrated circuit design and layout",
           "date": "Spring 2015",
-          "desc": "I worked on a team to design an integrated audio amplifier with digital gain control. We specified the layout down to the shape, size, and positioning of each transistor across all the silicon and metal layers. After duplicating the circuit to make our amplifier \"stereo\", there was still more than enough room left on the 1mm-square die for our faces."
+          "desc": "I worked on a team to design an integrated audio amplifier with digital gain control. We specified the layout down to the shape, size, and positioning of each transistor across all the silicon and metal layers. After duplicating the circuit to make our amplifier \"stereo\", there was still more than enough room left on the die for our faces."
         }
       ]
     },
@@ -43,42 +82,42 @@
         {
           "name": "practicalee",
           "title": "Practical EE",
-          "role": "Course designer, instructor",
+          "subtitle": "Course designer, instructor",
           "date": "Spring 2016",
           "desc": ""
         },
         {
           "name": "olinjs",
           "title": "Olin.js",
-          "role": "Course designer, instructor",
+          "subtitle": "Course designer, instructor",
           "date": "Spring 2015",
           "desc": ""
         },
         {
           "name": "controls",
           "title": "Controls",
-          "role": "Course assistant",
+          "subtitle": "Course assistant",
           "date": "Fall 2016",
           "desc": ""
         },
         {
           "name": "circuits",
           "title": "Circuits",
-          "role": "Peer tutor",
+          "subtitle": "Peer tutor",
           "date": "Spring 2016",
           "desc": ""
         },
         {
           "name": "poe",
           "title": "Principles of Engineering",
-          "role": "Course assistant",
+          "subtitle": "Course assistant",
           "date": "Fall 2015",
           "desc": ""
         },
         {
           "name": "circuits-intro",
           "title": "Intro EE Courses",
-          "role": "Course assistant",
+          "subtitle": "Course assistant",
           "date": "Fall 2013 - Fall 2016",
           "desc": ""
         }
@@ -90,21 +129,21 @@
         {
           "name": "olin-chamber",
           "title": "Olin Chamber Ensemble",
-          "role": "Founding member, violinist, violist",
+          "subtitle": "Founding member, violinist, violist",
           "date": "Spring 2014 - Spring 2016",
           "desc": ""
         },
         {
           "name": "oco",
           "title": "Olin Conductorless Orchestra",
-          "role": "Navigator, violinist, violist",
+          "subtitle": "Navigator, violinist, violist",
           "date": "Fall 2012 - Spring 2016",
           "desc": ""
         },
         {
           "name": "pit",
           "title": "Musical Pit Orchestra",
-          "role": "Violinist, violist",
+          "subtitle": "Violinist, violist",
           "date": "Fall 2008 - Spring 2012",
           "desc": ""
         }
@@ -116,21 +155,21 @@
         {
           "name": "squirrel",
           "title": "Squirrel",
-          "role": "Michael G. LaFosse",
+          "subtitle": "Michael G. LaFosse",
           "date": "Winter 2016",
           "desc": ""
         },
         {
           "name": "koi",
           "title": "Dollar Koi Fish",
-          "role": "Won Park",
+          "subtitle": "Won Park",
           "date": "Winter 2016",
           "desc": ""
         },
         {
           "name": "rose",
           "title": "New Kawasaki Rose",
-          "role": "Toshikazu Kawasaki",
+          "subtitle": "Toshikazu Kawasaki",
           "date": "",
           "desc": ""
         }

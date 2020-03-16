@@ -283,7 +283,7 @@ a.back-button:hover {
 .cat-details h2 {
   transition: padding 450ms;
 }
-.cat-details .role {
+.cat-details .subtitle {
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: 600;

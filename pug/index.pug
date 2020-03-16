@@ -31,13 +31,13 @@ block content
             each entry in cat.entries
               if key == "courses"
                 .cat-details(name=entry.name)
-                  .role #{entry.role}
+                  .subtitle #{entry.subtitle}
                   p #{entry.desc}
                   .date #{entry.date}
               else
                 .cat-details(name=entry.name)
                   h2 #{entry.title}
-                  .role #{entry.role}
+                  .subtitle #{entry.subtitle}
                   p #{entry.desc}
                   .date #{entry.date}
           a(href='categories/'+key+'.html').cat-title #{cat.title}
