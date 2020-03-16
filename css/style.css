@@ -231,14 +231,16 @@ h6 {
   height: 100%;
   transition: opacity 450ms;
 }
-.img-container img.color {
+.img-container img.color,
+.img-container img.open {
   border-radius: 3px;
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
-.img-container img.color.active {
+.img-container img.color.active,
+.img-container img.open.active {
   opacity: 1 !important;
 }
 .img-container:hover img.color {

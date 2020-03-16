@@ -1,16 +1,5 @@
 {
   "buffer": {
-    "projects": {
-      "entries": [
-        {
-          "name": "shelf",
-          "title": "Sliding Bedside Shelf",
-          "subtitle": "Mechanical design, woodworking",
-          "date": "Winter 2018",
-          "desc": ""
-        }
-      ]
-    },
     "work": {
       "title": "Work",
       "entries": [
@@ -42,6 +31,14 @@
     "projects": {
       "title": "Projects",
       "entries": [
+        {
+          "name": "shelf",
+          "title": "Sliding Bedside Shelf",
+          "subtitle": "Mechanical design, woodworking",
+          "date": "Winter 2018",
+          "open_img": true,
+          "desc": ""
+        },
         {
           "name": "ivani",
           "title": "Smart Outlet",
