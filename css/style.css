@@ -225,6 +225,7 @@ h6 {
   overflow: hidden;
   border-radius: 3px;
   height: 10rem;
+  cursor: pointer;
   position: relative;
 }
 .img-container img {
