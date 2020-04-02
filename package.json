@@ -6,7 +6,7 @@
   "author": "Evan Dorsky",
   "license": "ISC",
   "dependencies": {
-    "pug": "^2.0.0-beta6",
+    "pug": "^2.0.4",
     "simplebar": "^5.1.0",
     "velocity-animate": "^1.4.0",
     "zepto": "^1.2.0"
