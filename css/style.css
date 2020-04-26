@@ -238,8 +238,7 @@ h6 {
 .cat-img img {
   border-radius: 3px;
   height: 10rem;
-  transition: opacity 450ms;
-  transition: height 450ms;
+  transition: opacity 450ms, height 450ms;
 }
 .cat-img img.color,
 .cat-img img.open {
