@@ -127,9 +127,36 @@ h1, h2, h3, h4, h5, h6
 .cat
   padding .8rem 1.5rem 1.5rem 1.5rem
 
+.cat.courses
+  .photo-box
+    flex-flow row wrap
+  .cat-img
+    position relative
+    
+    flex 0 0 auto
+    text-align center
+    border-radius 3px
+    
+    font-weight 200
+    font-size 1.4rem
+
+    padding .75rem
+    margin .5rem 1rem
+
+    height auto
+
+    color var(--text-color)
+    background-color var(--faint-bg-color)
+
+  .whiteout
+    margin -.75rem
+
+.photo-box::-webkit-scrollbar
+  display none
 .photo-box
   margin-bottom .3rem
   display flex
+  align-items stretch
   
   overflow-y hidden
   overflow-x scroll
@@ -146,31 +173,16 @@ h1, h2, h3, h4, h5, h6
       padding 0 1rem
       margin-bottom 2rem
 
+      img
+        &.color, &.open
+          left 1rem
+
 .content-container
   display flex
 
-.cat.courses
-  .photo-box
-    flex-flow row wrap
-  .cat-img
-    position relative
-    
-    flex 0 0 auto
-    text-align center
-    
-    font-weight 200
-    font-size 1.4rem
-
-    padding .75rem
-    margin .5rem 1rem
-
-    height auto
-
-    color var(--text-color)
-    background-color var(--faint-bg-color)
-
-  .whiteout
-    margin -.75rem
+.right-pad
+  width 100rem
+  flex 1 0 auto
 
 .cat-img
   &.fade
@@ -178,27 +190,23 @@ h1, h2, h3, h4, h5, h6
 
   transition opacity focus-time
     
-  border-radius 3px
   flex 0 1 auto
    
   &:not(:last-child)
     padding-right 2rem
-
-.img-container
-  overflow hidden
-  border-radius 3px
-  height 10rem
-
+  
   cursor pointer
   
   position relative
+  // height 100%
 
   img
-    height 100%
+    border-radius 3px
+    height 10rem
 
     transition opacity focus-time
+    transition height focus-time
     &.color, &.open
-      border-radius 3px
       position absolute
       top 0
       left 0
@@ -210,6 +218,9 @@ h1, h2, h3, h4, h5, h6
   &:hover
     img.color
       opacity 0.7
+
+.large
+  height 15rem !important
 
 .whiteout
   position absolute

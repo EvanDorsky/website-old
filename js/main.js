@@ -36,6 +36,7 @@ function handleDetailDisplay(detail) {
 }
 
 function handleImgClick() {
+    // make all the selections and variable definitions
     var name = $(this).attr('name')
     var photoBox = $(this).parent()
     var catImg = $(this)
@@ -44,6 +45,8 @@ function handleImgClick() {
     var catAll = $('.cat-details')
     var catDetails = $('.cat-details')
 
+    var allImgs = $('.cat-img').find('img')
+    var allImgsHere = $('.cat-img[name='+name+']').find('img')
     var colorImg = $('.cat-img[name='+name+']').find('img.color')
     var openImg = $('.cat-img[name='+name+']').find('img.open')
     var colorImgsAll = $('.cat-img').find('img.color')
@@ -63,30 +66,54 @@ function handleImgClick() {
     var whiteOuts = $('.whiteout')
     var whiteOut = catImg.find('.whiteout')
 
-    var scrollOffset = 0
-    for (var i=0; $(catImgsHere[i]).attr('name') != name; i++)
-        scrollOffset += $(catImgsHere[i]).width()
-    scrollOffset -= photoBox.scrollLeft()
-    // defined variables
-
     // reset everything
     whiteOuts.removeClass('opaque')
     colorImgsAll.removeClass('active')
     openImgsAll.removeClass('active')
     catTitlesAll.removeClass('active')
     catDetails.removeClass('active')
+    allImgs.removeClass('large')
+    $('.right-pad').remove()
     catDetails.css({'height': 0})
     
-    clearTimeout(hideDetails)
-    hideDetails = setTimeout(function() {
-        catDetails.hide()
-    }, focusTime)
+    // It looks like this code isn't necessary?
+    // (height: 0 may be enough to hide the element)
 
-    // only show if it wasn't showing -- and isn't a course
+    // clearTimeout(hideDetails)
+    // hideDetails = setTimeout(function() {
+    //     catDetails.hide()
+    // }, focusTime)
+
+    // TODO: Only remove the right-pad element at the right time --
+    // otherwise there's jank when i.e. opening a cat-img in a
+    // photo-box that already has another active cat-img (because the 
+    // padding element briefly disappears, then reappears)
+
+    // The conditional should be effectively "only remove the right-pad
+    // element if all the cat-img elements in this photo-box will be 
+    // closed after this function is done"
+
+    // TODO: Also, when right-pad is going to be removed, first animate
+    // a scroll back to the furthest right position that would be possible
+    // without right-pad (to prevent jumping or getting stuck in an impossible
+    // scroll position)
+
+    // TODO: The right-pad element has to be sized correctly, or the 
+    // max scroll position limited (I prefer the first) to prevent the
+    // ability to scroll a ridiuclous 
+
+    // Only show if it wasn't showing -- and isn't a course
+    var scrollOffset = 0
+    for (var i=0; $(catImgsHere[i]).attr('name') != name; i++)
+        scrollOffset += $(catImgsHere[i]).width()
+    scrollOffset -= photoBox.scrollLeft()
+
+    // Then remove it on closing
     if (wasHidden && !photoBox.parent().hasClass('courses')) {
         whiteOuts.addClass('opaque')
         whiteOut.removeClass('opaque')
         catTitlesAll.addClass('active')
+        photoBox.append('<div class="right-pad"></div>')
         $('html').velocity('scroll', {
             container: photoBox,
             axis: 'x',
@@ -96,6 +123,7 @@ function handleImgClick() {
         if (openImg) {
           openImg.addClass('active')
         }
+        allImgsHere.addClass('large')
         colorImg.addClass('active')
 
         handleDetailDisplay(catDetail)
@@ -106,6 +134,11 @@ function add(x, y) {
     return x+y
 }
 
+// Calculate the margin-right of the last child in a row-wrapping
+// flexbox so that the last row of items flows the same as 
+// all the previous rows
+// (In retrospect, it probably would have been better to just 
+// do this with dummy elements)
 function lastChildMargin() {
     var lastCat = $('.cat-img:last-child')
 
