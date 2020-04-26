@@ -84,6 +84,20 @@ function handleImgClick() {
     //     catDetails.hide()
     // }, focusTime)
 
+    // TODO: The scrollOffset calculation is wrong if there was an open cat-img
+    // to the left of the cat-img that's opening now, because the width
+    // of the cat-img to the left changes *after* this calculation is made
+
+    // Calculate the width of each element by calculating the aspect ratio
+    // and multiplying by the height of the image that was clicked
+
+    // This will work because if the clicked image has already been expanded,
+    // no scrolling will happen
+    var scrollOffset = 0
+    for (var i=0; $(catImgsHere[i]).attr('name') != name; i++)
+        scrollOffset += $(catImgsHere[i]).width()
+    scrollOffset -= photoBox.scrollLeft()
+
     // TODO: Only remove the right-pad element at the right time --
     // otherwise there's jank when i.e. opening a cat-img in a
     // photo-box that already has another active cat-img (because the 
@@ -100,15 +114,9 @@ function handleImgClick() {
 
     // TODO: The right-pad element has to be sized correctly, or the 
     // max scroll position limited (I prefer the first) to prevent the
-    // ability to scroll a ridiuclous 
+    // ability to scroll a ridiculous distance to the right
 
     // Only show if it wasn't showing -- and isn't a course
-    var scrollOffset = 0
-    for (var i=0; $(catImgsHere[i]).attr('name') != name; i++)
-        scrollOffset += $(catImgsHere[i]).width()
-    scrollOffset -= photoBox.scrollLeft()
-
-    // Then remove it on closing
     if (wasHidden && !photoBox.parent().hasClass('courses')) {
         whiteOuts.addClass('opaque')
         whiteOut.removeClass('opaque')
