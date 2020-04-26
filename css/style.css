@@ -254,9 +254,6 @@ h6 {
 .cat-img:hover img.color {
   opacity: 0.7;
 }
-.large {
-  height: 15rem !important;
-}
 .whiteout {
   position: absolute;
   width: 100%;

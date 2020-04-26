@@ -3,7 +3,7 @@
 })()
 
 var focusTime = 450 // ms
-var hideDetails
+var catImgRestHeight = "10rem"
 
 function init() {
     var loc = window.location.href.split('/')
@@ -62,6 +62,9 @@ function handleImgClick() {
     var catTitlesAll = $('.cat-title')
 
     var catImgsHere = photoBox.find('.cat-img')
+    var imgElsHere = photoBox.find('.cat-img').find('img.color')
+    console.log('imgElsHere')
+    console.log(imgElsHere)
 
     var whiteOuts = $('.whiteout')
     var whiteOut = catImg.find('.whiteout')
@@ -72,7 +75,7 @@ function handleImgClick() {
     openImgsAll.removeClass('active')
     catTitlesAll.removeClass('active')
     catDetails.removeClass('active')
-    allImgs.removeClass('large')
+    allImgs.css('height', catImgRestHeight)
     $('.right-pad').remove()
     catDetails.css({'height': 0})
     
@@ -84,18 +87,14 @@ function handleImgClick() {
     //     catDetails.hide()
     // }, focusTime)
 
-    // TODO: The scrollOffset calculation is wrong if there was an open cat-img
-    // to the left of the cat-img that's opening now, because the width
-    // of the cat-img to the left changes *after* this calculation is made
-
-    // Calculate the width of each element by calculating the aspect ratio
-    // and multiplying by the height of the image that was clicked
-
-    // This will work because if the clicked image has already been expanded,
-    // no scrolling will happen
     var scrollOffset = 0
-    for (var i=0; $(catImgsHere[i]).attr('name') != name; i++)
-        scrollOffset += $(catImgsHere[i]).width()
+    for (var i=0; $(catImgsHere[i]).attr('name') != name; i++) {
+        var imgWidth = $(imgElsHere[i]).width()
+        var imgHeight = $(imgElsHere[i]).height()
+        var imgAR = imgWidth / imgHeight
+        var padding = parseInt($(catImgsHere[i]).css('padding-right'))
+        scrollOffset += imgAR * $(colorImg).height() + padding
+    }
     scrollOffset -= photoBox.scrollLeft()
 
     // TODO: Only remove the right-pad element at the right time --
@@ -125,13 +124,14 @@ function handleImgClick() {
         $('html').velocity('scroll', {
             container: photoBox,
             axis: 'x',
-            duration: 1.2*Math.abs(scrollOffset),
+            duration: focusTime,
+            // duration: 1.2*Math.abs(scrollOffset),
             offset: scrollOffset
         })
         if (openImg) {
           openImg.addClass('active')
         }
-        allImgsHere.addClass('large')
+        allImgsHere.css('height', '15rem')
         colorImg.addClass('active')
 
         handleDetailDisplay(catDetail)
